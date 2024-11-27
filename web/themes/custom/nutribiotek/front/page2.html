@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <header class="d-flex align-items-lg-center align-items-md-center align-items-start justify-content-between container-fluid mt-3 main_header" role="banner">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="/">
+                <img src="assets/images/logo.svg" class="site_logo" alt="nitrubiotique logo" />
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav aria-label="Main navigation" class="main_navigation">
+            <ul class="nav-list">
+                <li><a href="page2.html" class="parent_link">À propos</a></li>
+                <li>
+                    <a href="page3.html" class="parent_link">Nos produits</a>
+                    <div class="link_childs_list">
+                        <div class="link_list">
+                            <ul>
+                                <li class="child_item" data-img="assets/images/product_img.svg" ><a class="child_links" href="page3.html">Biostimulants</a></li>
+                                <li class="child_item" data-img="assets/images/hands_shake.png"><a class="child_links" href="page4.html" >Biofertilisants</a></li>
+                                <li class="child_item" data-img="assets/images/product_img.svg"><a class="child_links" href="page4.html" >Biocontrôle</a></li>
+                                <li class="child_item" data-img="assets/images/product_img.svg"><a class="child_links" href="page3.html" >Micronutriments</a></li>
+                            </ul>
+                        </div>
+                        <div class="link_img_cnt">
+                            <img id="child_img" src="" alt="Product Image">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="nos_sites.html" class="parent_link">Nos sites</a>
+                </li>
+                <li>
+                    <a href="#partners" class="parent_link">Nos partenaires</a>
+                    <div class="link_childs_list">
+                        <div class="link_list w-100">
+                            <ul>
+                                <li class="child_item" ><a class="child_links" href="nos_partenaires.html">Partenariat dans le développement de produits </a></li>
+                                <li class="child_item" ><a class="child_links" href="nos_partenaires2.html" >Biofertilisants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact" class="parent_link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Language, Search, and CTA Section -->
+        <div class="header-controls d-flex align-items-center">
+            <!-- Language Selector -->
+            <div class="custom-dropdown me-2">
+                <button class="custom-dropdown-toggle">Fr <img src="assets/images/dropdown.svg" alt="dropdown icon"></button>
+                <ul class="custom-dropdown-menu">
+                    <li class="custom-dropdown-item">Ar</li>
+                    <li class="custom-dropdown-item">En</li>
+                    <li class="custom-dropdown-item">Fr</li>
+                </ul>
+            </div>
+
+            <!-- Search Input -->
+            <div class="search_box me-2">
+                <img src="assets/images/search_icon.svg" alt="">
+                <input
+                    type="text"
+                    class=""
+                    placeholder="Recherche..."
+                    aria-label="Search">
+            </div>
+
+            <!-- CTA Button -->
+            <button type="button" class="colapse_btn menu_button"><img src="assets/images/collapse_btn.svg" alt="collpse boutton"></button>
+        </div>
+    </header>
+    <div class="main_container">
+        <section class="breadcrumb_container">
+            <div class="container">
+                <h1 class="page_title">À propos de nous</h1>
+                <p class="page_parag mb-5">Pour une agriculture plus propre et productive.</p>
+                <ul class="breadcrumb_links">
+                    <li class="breadcrumb_item"><a href="" class="breadcrumb_link">Home page</a></li>
+                    <li class="breadcrumb_item active_breadcrumb"><a href="" class="breadcrumb_link">À propos</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="mot_du_dg py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12 d-flex align-items-center">
+                        <img class="image_Directeur" src="assets/images/dg_img.png" alt="Directeur Général NUTRIBIOTE">
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <div class="my-lg-0 my-4">
+                            <h2 class="section_tag_main mb-4">Nutribiotek</h2>
+                            <h3 class="section_title mb-4">Mot du <strong>Directeur Général</strong></h3>
+                            <p class="p_standard black"><strong>Des solutions biotechnologiques pour un avenir agricole durable</strong></p>
+                            <p class="p_standard ">"Dans le paysage dynamique de l'agriculture mondiale, la biotechnologie végétale se profile comme l'un des marchés les plus prometteurs.
+                                Chez NUTRIBIOTEK, nous sommes convaincus que l'avenir de l'agriculture réside dans des solutions innovantes, pertinentes et socialement responsables. En fusionnant la nutrition et la biotechnologie, nous nous positionnons comme un moteur de croissance durable.
+                                Notre approche repose également sur une recherche et développement interne de pointe, conjuguée à une collaboration étroite avec les écosystèmes locaux et des partenaires externes fiables. Ainsi, nous garantissons une chaîne d'approvisionnement efficace et résiliente.
+                                Convaincus qu'en travaillant ensemble, en respectant l'environnement et en nous engageant constamment envers l'excellence, nous pouvons développer des solutions qui répondent non seulement aux besoins présents, mais préparent également un avenir meilleur."</p>
+                            <h4 class="p_standard black"><strong>Narjisse MAHMOUDI</strong></h4>
+                            <span class="p_standard ">Directeur Général NUTRIBIOTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="who_we_are_section container py-5">
+            <div class="content_cnt_div">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <h2 class="section_tag_white">Nutribiotek</h2>
+                        <h3 class="section_title white_cr">Qui sommes-<strong>nous?</strong></h3>
+                        <p class="p_standard white_cr">NUTRIBIOTEK est une société marocaine créée en 2024, solidement ancrée dans un écosystème d'innovation. Grâce à ses synergies avec INNOVX, UM6P et le Groupe OCP, elle se spécialise dans le développement, la production et la commercialisation de biofertilisants, de biostimulants, et de solutions de biocontrôle.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-12 d-flex justify-content-center align-items-center butn_cnt">
+                        <button class="video_btn"><img class="video_icon" src="assets/images/play_video_icon.png" alt=""></button>
+                         <!-- Hidden video element for Fancybox -->
+                        <a href="assets/images/background_video.mp4"
+                            data-fancybox="video"
+                            data-caption="Background Video"
+                            class="video-link d-none">
+                            <video class="responsive-video">
+                                <source src="assets/images/background_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nos_mission container  py-5">
+            <div class="content_cnt_div">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 p-0 no_mission_img">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 p no_mission_cnt">
+                        <h2 class="section_tag_white">Nutribiotek</h2>
+                        <h3 class="section_title white_cr">Notre <strong>mission</strong></h3>
+                        <p class="p_standard white_cr">Accompagner les agriculteurs en développant et en proposant des solutions biotechnologiques avancées, qui renforcent la santé des sols et maximisent les rendements de manière durable, en alignement avec les priorités stratégiques du Groupe OCP et de ses composantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="no_valeurs container py-5">
+            <div class="mb-4 d-flex flex-column align-items-center text-center">
+                <h2 class="section_tag_bleu">Nutribiotek</h2>
+                <h3 class="section_title">Nos <strong>Valeurs</strong></h3>
+                <p class="p_standard mb-0">Des valeurs qui nourrissent notre engagement envers une agriculture durable.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                        <img class="valeur_icon" src="assets/images/niya.png" alt="">
+                        <h3 class="valeur_title">Niya</h3>
+                        <p class="valeur_description px-lg-5">A travers notre engagement sincère envers nos partenaires et la durabilité environnementale</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                        <img class="valeur_icon" src="assets/images/niya.png" alt="">
+                        <h3 class="valeur_title">Nefs</h3>
+                        <p class="valeur_description px-lg-5">Par l'excellence et l'intégrité dans toutes nos actions et innovations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                        <img class="valeur_icon" src="assets/images/niya.png" alt="">
+                        <h3 class="valeur_title">Lyed f Lyed</h3>
+                        <p class="valeur_description px-lg-5">Matérialisée par la collaboration et le travail d'équipe pour atteindre des objectifs communs
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="no_strategies">
+            <div class="top_content container">
+                <div class="d-lg-flex d-md-flex d-block justify-content-between">
+                    <div>
+                        <h2 class="section_tag_white">Nutribiotek</h2>
+                        <h3 class="section_title white_cr">Notre <strong>mission</strong></h3>
+                    </div>
+                    <div class="d-flex align-items-end">
+                        <p class="p_standard white_cr">Une approche visionnaire pour transformer l'agriculture.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="container mb-5 strategie_cnt">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="strategie_item">
+                        <img class="w-100 mb-2" src="assets/images/hands_shake.png" alt="">
+                        <h2 class="strategie_title">Développer des partenariats stratégiques, alliances, fusions, acquisitions:</h2>
+                        <p  class="p_standard">La croissance externe propulse l'ensemble de notre écosystème vers un avenir meilleur. Elle permet d'accéder à de nouveaux marchés, renforcer les compétences, innover et de diversifier les activités, contribuant ainsi à une résilience collective. </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-lg-0 my-md-0 my-4">
+                    <div class="strategie_item">
+                        <img class="w-100 mb-2" src="assets/images/hands_shake.png" alt="">
+                        <h2 class="strategie_title">Développer des partenariats stratégiques, alliances, fusions, acquisitions:</h2>
+                        <p  class="p_standard">La croissance externe propulse l'ensemble de notre écosystème vers un avenir meilleur. Elle permet d'accéder à de nouveaux marchés, renforcer les compétences, innover et de diversifier les activités, contribuant ainsi à une résilience collective. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="navigation_menu">
+            <div class="container-fluid px-5 pt-5 ">
+                <a href="/">
+                    <img src="assets/images/logo.svg" class="site_logo2" alt="nitrubiotique logo" />
+                </a>
+            </div>
+            <div class="container navigation_menu_content px-5">
+                <div class="search_box_navigation d-flex align-items-center ">
+                    <input type="text" class="search_input_nav" placeholder="Tapez des mots et appuyez sur Entrée " aria-label="Search">
+                    <img src="assets/images/search_icon_white.svg" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-8  col-12">
+                        <ul class="nav_links_list">
+                            <li><a href="">À propos de nous</a></li>
+                            <li>
+                                <a href="">Nos produits</a>
+                                <ul>
+                                    <li><a class="" href="#">Biostimulants</a></li>
+                                    <li><a class="" href="#">Biofertilisants</a></li>
+                                    <li><a class="" href="#">Biocontrôle</a></li>
+                                    <li><a class="" href="#">Micronutriments</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Nos sites</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Actualités</a></li>
+                            <li><a href="">Nos offres d'emploi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="contact_content px-4 border_lw">
+                            <h3 class="d-lg-block d-none">Contact Info</h3>
+                            <p class="d-lg-block d-none">Rorem ipsum dolor sit amet, conse ctetur adipiscing elit tiam eu turpis molestie</p>
+                            <p class="d-lg-block d-none"><a href="tel:+212612345678">(+212) 612345678</a></p>
+                            <p class="d-lg-block d-none"><a href="mailto:Contact@nutri-biotek.com">Contact@nutri-biotek.com</a></p>
+                            <div class="d-flex justify-content-lg-between justify-content-center align-items-center gap-lg-0 gap-md-5 gap-3">
+                                <div class="d-flex gap-3">
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                </div>
+                                <div>
+                                    <a href="" class="primary_btn_globalv2"><span>Contact<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn"><img src="assets/images/close_icon.svg" alt="close buttoun"></button>
+        </section>
+    </div>
+    <footer class="container p-4">
+        <div class="footer_cnt">
+            <div class=" top_footer_parts">
+                <div class="left_top_footer">
+                    <img src="assets/images/footer_logo.png" class="w-100" alt="">
+                </div>
+                <div class="right_top_footer">
+                    <div class="content_cnt px-lg-5">
+                        <h3 class="news_letter_title">S’abonner à la newsletter</h3>
+                        <span>Abonnez-vous pour ne rien manquer de nos news.</span>
+                        <div class="nwes_form mt-2">
+                            <input class="news_letter_input" type="email" name="" placeholder="Email" id="">
+                            <button class="primary_btn_global" type="submit"><span>S’abonner<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_div">
+                <div>
+                    <ul class="list_links_footer">
+                        <li><a href="">à propos</a></li>
+                        <li><a href="">Notre présence</a></li>
+                        <li><a href="">Nos produits</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="row align-items-center ">
+                    <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-start gap-3">
+                        <div class="custom-dropdown ">
+                            <button class="custom-dropdown-toggle">Fr <img src="assets/images/dropdown.svg" alt="dropdown icon"></button>
+                            <ul class="custom-dropdown-menu">
+                                <li class="custom-dropdown-item">Ar</li>
+                                <li class="custom-dropdown-item">En</li>
+                                <li class="custom-dropdown-item">Fr</li>
+                            </ul>
+                        </div>
+                        <a class="white_link" href="">Privacy</a>
+                        <a class="white_link" href="">Legal</a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-lg-center justify-content-start">
+                        <P class="white_p">© 2024 Nutribiotek. All Rights Reserved.</P>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-end">
+                        <ul class="links_list gap-3">
+                            <li><a href=""><img src="assets/images/Linkedin.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/images/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/images/x.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

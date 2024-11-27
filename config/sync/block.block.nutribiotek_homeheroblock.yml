@@ -1,0 +1,30 @@
+uuid: 0a53795d-abcc-489b-87bd-86bfbb2e6397
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:hero_home:ee34b92d-d637-4ca6-a1d5-e17d72f12377'
+  module:
+    - block_content
+    - system
+  theme:
+    - nutribiotek
+id: nutribiotek_homeheroblock
+theme: nutribiotek
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:ee34b92d-d637-4ca6-a1d5-e17d72f12377'
+settings:
+  id: 'block_content:ee34b92d-d637-4ca6-a1d5-e17d72f12377'
+  label: 'Home Hero Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

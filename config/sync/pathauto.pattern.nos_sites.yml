@@ -1,0 +1,22 @@
+uuid: 9234dfc9-2aaa-4f93-9c7c-011f797ad59d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: nos_sites
+label: 'Nos sites'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  411aacb9-ae30-437a-a180-562f8f0bd962:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 411aacb9-ae30-437a-a180-562f8f0bd962
+    context_mapping:
+      node: node
+    bundles:
+      nos_sites: nos_sites
+selection_logic: and
+weight: -5
+relationships: {  }

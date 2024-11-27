@@ -1,0 +1,51 @@
+uuid: 77408b22-5253-449a-a8b9-5039a4018b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.notre_strategie.field_body
+    - field.field.paragraph.notre_strategie.field_libelle
+    - field.field.paragraph.notre_strategie.field_strategie
+    - field.field.paragraph.notre_strategie.field_title
+    - paragraphs.paragraphs_type.notre_strategie
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.notre_strategie.default
+targetEntityType: paragraph
+bundle: notre_strategie
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_strategie:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

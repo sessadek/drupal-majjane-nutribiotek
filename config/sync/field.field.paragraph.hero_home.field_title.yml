@@ -1,0 +1,19 @@
+uuid: b1b039c1-bbd2-4287-aa7a-e18a25f9eb80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.hero_home
+id: paragraph.hero_home.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: hero_home
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

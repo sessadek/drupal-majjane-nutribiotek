@@ -1,0 +1,10 @@
+uuid: 26294fa5-0b89-410f-a2bc-75ba3ec451c5
+langcode: en
+status: true
+dependencies: {  }
+id: hp_solution
+label: 'HP - Solution'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,29 @@
+uuid: 14a6308f-eb6f-4662-a40b-ebdd47f33c6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_image
+    - media.type.social_media_image
+    - system.menu.social-links
+id: menu_link_content.social-links.field_image
+field_name: field_image
+entity_type: menu_link_content
+bundle: social-links
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      social_media_image: social_media_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

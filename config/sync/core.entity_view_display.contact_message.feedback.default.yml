@@ -1,0 +1,60 @@
+uuid: 036b981a-6903-4c0e-bf61-f63c7002df16
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_accept_condition
+    - field.field.contact_message.feedback.field_city
+    - field.field.contact_message.feedback.field_last_name
+    - field.field.contact_message.feedback.field_phone
+  module:
+    - telephone
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_accept_condition:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_city:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_last_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_phone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  message:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,43 @@
+uuid: faeec14a-aa2b-45b7-8253-1f0f367f216a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nos_produits.field_libelle
+    - field.field.paragraph.nos_produits.field_produit_similaire
+    - field.field.paragraph.nos_produits.field_title
+    - paragraphs.paragraphs_type.nos_produits
+id: paragraph.nos_produits.default
+targetEntityType: paragraph
+bundle: nos_produits
+mode: default
+content:
+  field_libelle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_produit_similaire:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

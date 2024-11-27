@@ -1,0 +1,18 @@
+.chip {
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+.chip--color-primary {
+  background-color: var(--color--primary-50);
+  color: green;
+}
+
+.chip--color-secondary {
+  background-color: var(--color--gray-100);
+  color: var(--color-text-primary-medium);
+}
+
+.chip--dismissed {
+  display: none;
+}

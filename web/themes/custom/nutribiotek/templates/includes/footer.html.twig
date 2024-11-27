@@ -1,0 +1,32 @@
+
+{% 
+  set classes = [
+    'container',
+    'p-4',
+  ]
+%}
+{%
+  set classContainer = [
+    'footer_cnt'
+  ]
+%}
+<footer role="contentinfo" class="{{ classes|join(" ") }}">
+  <div class="{{ classContainer|join(" ") }}">
+    {% if page.footer_top %}
+      {{ page.footer_top }}
+    {% endif %}
+    <div class="bottom_div">
+      {% if page.footer_bottom_menu %}
+        {{ page.footer_bottom_menu }}
+      {% endif %}
+      <div class="row align-items-center">
+        {% if page.footer_bottom_right %}
+          {{ page.footer_bottom_right }}
+        {% endif %}
+        {% if page.footer_bottom %}
+          {{ page.footer_bottom }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</footer>

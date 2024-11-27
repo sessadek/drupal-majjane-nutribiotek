@@ -1,0 +1,67 @@
+uuid: 84de6a8e-d3df-48ec-917d-c08cf50ce178
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solution
+    - paragraphs.paragraphs_type.hp_nos_solutions
+    - paragraphs.paragraphs_type.hp_solution
+  module:
+    - entity_reference_revisions
+id: paragraph.hp_nos_solutions.field_solution
+field_name: field_solution
+entity_type: paragraph
+bundle: hp_nos_solutions
+label: Solution
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hp_solution: hp_solution
+    negate: 0
+    target_bundles_drag_drop:
+      content_image:
+        weight: 15
+        enabled: false
+      content_link:
+        weight: 16
+        enabled: false
+      content_link_image:
+        weight: 17
+        enabled: false
+      hero_home:
+        weight: 18
+        enabled: false
+      hp_nos_solutions:
+        weight: 19
+        enabled: false
+      hp_partenaires:
+        weight: 20
+        enabled: false
+      hp_qui_somme_nous:
+        weight: 21
+        enabled: false
+      hp_solution:
+        weight: 14
+        enabled: true
+      nos_sponsors:
+        weight: 22
+        enabled: false
+      notre_offre:
+        weight: 23
+        enabled: false
+      product_category:
+        weight: 24
+        enabled: false
+      produit:
+        weight: 25
+        enabled: false
+      text_content:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

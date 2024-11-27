@@ -1,0 +1,10 @@
+uuid: 6ebf8762-6166-4718-8e20-33ba240f975c
+langcode: en
+status: true
+dependencies: {  }
+id: caracteristique_produit
+label: 'Caracteristique Produit'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

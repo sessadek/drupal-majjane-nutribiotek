@@ -1,0 +1,24 @@
+uuid: 97f5eb2d-394c-4717-940c-0e5327b4d5ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.valeur
+  module:
+    - text
+id: paragraph.valeur.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: valeur
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

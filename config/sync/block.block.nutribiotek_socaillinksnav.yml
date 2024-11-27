@@ -1,0 +1,25 @@
+uuid: 41a1be68-af77-476a-9d40-a30ef232924d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.socail-links-nav
+  module:
+    - system
+  theme:
+    - nutribiotek
+id: nutribiotek_socaillinksnav
+theme: nutribiotek
+region: mobile_nav_contact
+weight: 0
+provider: null
+plugin: 'system_menu_block:socail-links-nav'
+settings:
+  id: 'system_menu_block:socail-links-nav'
+  label: 'Socail links nav'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

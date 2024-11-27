@@ -1,0 +1,8 @@
+uuid: cd9f8231-f2c2-4fcf-a80a-8c63535c53ab
+langcode: en
+status: true
+dependencies: {  }
+id: terms-of-service
+label: 'Terms of Service'
+description: 'The Terms of Service sets clear expectations for both users and the provider, helping to prevent misuse and protect both parties from legal issues.'
+locked: false

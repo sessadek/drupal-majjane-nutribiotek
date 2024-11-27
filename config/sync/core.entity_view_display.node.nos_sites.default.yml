@@ -1,0 +1,41 @@
+uuid: 0dbb5add-6d4f-4367-bf72-46a6835e2f38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nos_sites.field_bandeau
+    - field.field.node.nos_sites.field_content
+    - node.type.nos_sites
+  module:
+    - entity_reference_revisions
+    - user
+id: node.nos_sites.default
+targetEntityType: node
+bundle: nos_sites
+mode: default
+content:
+  field_bandeau:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

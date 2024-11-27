@@ -1,0 +1,20 @@
+uuid: db9cdc4a-210f-47b5-846b-627143742a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.product_category
+  module:
+    - path
+id: node.product_category.path
+field_name: path
+entity_type: node
+bundle: product_category
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

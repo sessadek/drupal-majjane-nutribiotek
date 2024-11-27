@@ -1,0 +1,19 @@
+uuid: d3838d9a-b8b0-413b-aefd-63fa80166ec6
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 4J2RPG4JmsD4Fm1NlIQY0JHkrJ08UUl0qTF0_EjUxvw
+id: relationship
+label: Relation
+category: Démographique
+likert: false
+options: |
+  Parent: Parent
+  'Significant Other': 'Significant Other'
+  Sibling: Sibling
+  Child: Child
+  Friend: Friend

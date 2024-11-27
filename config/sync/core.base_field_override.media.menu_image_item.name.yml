@@ -1,0 +1,20 @@
+uuid: cf847de2-10cb-4149-825d-2ec92d49d29f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.menu_image_item
+id: media.menu_image_item.name
+field_name: name
+entity_type: media
+bundle: menu_image_item
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

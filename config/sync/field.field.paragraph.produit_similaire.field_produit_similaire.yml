@@ -1,0 +1,29 @@
+uuid: 06995bac-5ada-4454-bad5-4559cb861971
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_produit_similaire
+    - node.type.produit
+    - paragraphs.paragraphs_type.produit_similaire
+id: paragraph.produit_similaire.field_produit_similaire
+field_name: field_produit_similaire
+entity_type: paragraph
+bundle: produit_similaire
+label: 'Produit Similaire'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      produit: produit
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

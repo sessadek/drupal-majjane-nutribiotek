@@ -1,0 +1,23 @@
+uuid: ea77e5cb-d6da-4da1-a25b-d00ad53253f0
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: nutribiotek_syndicate
+theme: nutribiotek
+region: header
+weight: -3
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

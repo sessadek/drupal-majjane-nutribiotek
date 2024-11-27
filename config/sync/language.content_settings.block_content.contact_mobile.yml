@@ -1,0 +1,16 @@
+uuid: e0a0f069-8873-4e6e-8202-2019e885005f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_mobile
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.contact_mobile
+target_entity_type_id: block_content
+target_bundle: contact_mobile
+default_langcode: site_default
+language_alterable: true

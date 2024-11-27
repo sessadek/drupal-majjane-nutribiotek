@@ -1,0 +1,18 @@
+uuid: 27cee404-4bbc-471f-b581-b475f70d35c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.terms-of-service
+id: menu_link_content.terms-of-service.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: terms-of-service
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

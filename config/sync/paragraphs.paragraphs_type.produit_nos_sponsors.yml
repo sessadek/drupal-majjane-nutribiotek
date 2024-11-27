@@ -1,0 +1,10 @@
+uuid: 157a0135-b6fd-49ca-81f0-77c159240814
+langcode: en
+status: true
+dependencies: {  }
+id: produit_nos_sponsors
+label: '- Produit - Nos sponsors'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

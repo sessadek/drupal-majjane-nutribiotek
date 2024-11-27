@@ -1,0 +1,26 @@
+uuid: 78b20d96-2d03-4ad3-9714-caee7a370681
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nos_sponsors.field_image_upload
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.nos_sponsors
+  module:
+    - svg_image
+id: paragraph.nos_sponsors.default
+targetEntityType: paragraph
+bundle: nos_sponsors
+mode: default
+content:
+  field_image_upload:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

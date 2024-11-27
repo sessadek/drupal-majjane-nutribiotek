@@ -1,0 +1,10 @@
+uuid: eacad0b3-da2c-47a4-a6a2-7ac9c299ab76
+langcode: en
+status: true
+dependencies: {  }
+id: strategie
+label: Strategie
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

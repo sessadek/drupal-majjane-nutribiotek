@@ -1,0 +1,18 @@
+uuid: 94bb96fa-f2d4-4164-af07-85966384b62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.terms-of-service
+id: menu_link_content.terms-of-service.description
+field_name: description
+entity_type: menu_link_content
+bundle: terms-of-service
+label: Description
+description: 'Shown when hovering over the menu link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

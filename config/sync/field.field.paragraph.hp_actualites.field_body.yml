@@ -1,0 +1,24 @@
+uuid: c54be1d5-a792-4085-a668-e706fef2ee0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.hp_actualites
+  module:
+    - text
+id: paragraph.hp_actualites.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: hp_actualites
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

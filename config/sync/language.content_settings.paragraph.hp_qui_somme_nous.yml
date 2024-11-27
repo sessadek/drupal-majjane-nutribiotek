@@ -1,0 +1,18 @@
+uuid: b38046b2-3000-49f0-b794-b874fe6e548f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hp_qui_somme_nous
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.hp_qui_somme_nous
+target_entity_type_id: paragraph
+target_bundle: hp_qui_somme_nous
+default_langcode: site_default
+language_alterable: false

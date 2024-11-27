@@ -1,0 +1,18 @@
+uuid: e16fdc29-c595-4104-8b59-a213b1108e3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hp_nos_solutions
+id: paragraph.hp_nos_solutions.created
+field_name: created
+entity_type: paragraph
+bundle: hp_nos_solutions
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,19 @@
+uuid: bfe84dc0-5bf5-4b7c-be9d-fc320ec105c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.produit_nos_sponsors
+id: paragraph.produit_nos_sponsors.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: produit_nos_sponsors
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

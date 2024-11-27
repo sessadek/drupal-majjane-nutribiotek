@@ -1,0 +1,31 @@
+uuid: eb7cf0ef-bf4e-4a1c-90d9-db5f3f28ebee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_category.field_content
+    - node.type.product_category
+  module:
+    - entity_reference_revisions
+    - user
+id: node.product_category.default
+targetEntityType: node
+bundle: product_category
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

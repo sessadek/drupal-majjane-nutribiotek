@@ -1,0 +1,10 @@
+uuid: d8d8f5d0-d0ed-4095-b616-366ba5de7a95
+langcode: fr
+status: true
+dependencies: {  }
+id: logo_with_links
+label: 'Contenu image link'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

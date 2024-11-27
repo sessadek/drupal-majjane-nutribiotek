@@ -1,0 +1,24 @@
+uuid: 688437b4-6cc6-4228-b140-747e98b31c01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.notre_strategie
+  module:
+    - text
+id: paragraph.notre_strategie.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: notre_strategie
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

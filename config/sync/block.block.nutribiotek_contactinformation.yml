@@ -1,0 +1,39 @@
+uuid: f43c9af2-48a1-4924-981e-4698bb2a7fd5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact:560a3feb-8ada-4452-8a6a-8a5daeb1bccf'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - nutribiotek
+id: nutribiotek_contactinformation
+theme: nutribiotek
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:560a3feb-8ada-4452-8a6a-8a5daeb1bccf'
+settings:
+  id: 'block_content:560a3feb-8ada-4452-8a6a-8a5daeb1bccf'
+  label: 'Contact information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product_category: product_category
+      produit: produit
+  request_path:
+    id: request_path
+    negate: false
+    pages: /actualites/

@@ -1,0 +1,22 @@
+uuid: 31dd2bb7-900e-48d3-86cd-ca3f70931e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.a_propos_qui_somme_nous
+id: paragraph.a_propos_qui_somme_nous.status
+field_name: status
+entity_type: paragraph
+bundle: a_propos_qui_somme_nous
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

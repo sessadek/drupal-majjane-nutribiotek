@@ -1,0 +1,22 @@
+uuid: ca0a9c83-4195-492c-b307-11c40a00cabd
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produit_similaire
+id: paragraph.produit_similaire.status
+field_name: status
+entity_type: paragraph
+bundle: produit_similaire
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

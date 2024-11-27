@@ -1,0 +1,21 @@
+uuid: 9348fb2f-4014-4306-b1e6-6d97e84c5e67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produit_similaire.field_produit_similaire
+    - paragraphs.paragraphs_type.produit_similaire
+id: paragraph.produit_similaire.default
+targetEntityType: paragraph
+bundle: produit_similaire
+mode: default
+content:
+  field_produit_similaire:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

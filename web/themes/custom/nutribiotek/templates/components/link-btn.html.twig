@@ -1,0 +1,7 @@
+{% set arrow_img = '/' ~ active_theme_path() ~ '/front/assets/images/arrow.png' %}
+<a href="{{ link.0['#url_title'] }}" class="primary_btn_global">
+  <span>
+    <span>{{ link.0['#title'] }}</span>
+    <img src="{{ arrow_img }}" class="arrow_icon" alt="arrow icon">
+  </span>
+</a>

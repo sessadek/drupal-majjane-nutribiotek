@@ -1,0 +1,10 @@
+uuid: 8e34038b-8721-4207-8206-492ca9c19aa1
+langcode: en
+status: true
+dependencies: {  }
+id: nos_partenaires
+label: 'Nos partenaires'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

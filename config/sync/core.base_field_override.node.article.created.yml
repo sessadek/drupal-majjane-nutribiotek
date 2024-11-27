@@ -1,0 +1,18 @@
+uuid: e4c3555a-3db1-4e7e-ba2a-30325099da55
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.created
+field_name: created
+entity_type: node
+bundle: article
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,10 @@
+uuid: 2e8529a3-cc2e-416f-9ab3-71f6d27afadd
+langcode: en
+status: true
+dependencies: {  }
+id: valeur
+label: Valeur
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

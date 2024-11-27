@@ -1,0 +1,24 @@
+uuid: d7ac33b7-aaa7-4094-b434-9e46efe61082
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.contact
+  module:
+    - text
+id: paragraph.contact.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: contact
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

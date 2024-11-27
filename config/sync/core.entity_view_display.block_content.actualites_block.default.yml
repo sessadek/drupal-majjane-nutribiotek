@@ -1,0 +1,25 @@
+uuid: eb5549e2-463a-4f73-b88f-97492b4c66ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.actualites_block
+    - field.field.block_content.actualites_block.field_actualites
+  module:
+    - entity_reference_revisions
+id: block_content.actualites_block.default
+targetEntityType: block_content
+bundle: actualites_block
+mode: default
+content:
+  field_actualites:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

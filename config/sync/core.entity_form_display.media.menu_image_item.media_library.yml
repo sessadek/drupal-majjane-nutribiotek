@@ -1,0 +1,44 @@
+uuid: a9aa3b53-706e-4147-9fe7-4f83e4cd9b96
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.menu_image_item.field_media_image_1
+    - image.style.thumbnail
+    - media.type.menu_image_item
+  module:
+    - svg_image
+id: media.menu_image_item.media_library
+targetEntityType: media
+bundle: menu_image_item
+mode: media_library
+content:
+  field_media_image_1:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

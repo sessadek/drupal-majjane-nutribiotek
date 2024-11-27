@@ -1,0 +1,24 @@
+{% macro getActualiteItemByRef(routeName, nid, title, body, image) %}
+  <div class="product_item">
+    {% if image %}
+      <div class="w-100 product_img_item">
+        <img src="{{ file_url(image.entity.uri.value) }}" alt="{{ image.alt }}">
+      </div>
+
+    {% endif %}
+    <div class="txt_content">
+      {% if title.value %}
+        <h3 class="product_name">{{ title.value }}</h3>
+      {% endif %}
+      {% if body.value %}
+        <div class="product_desc">
+          {{ body.summary|raw }}
+        </div>
+      {% endif %}
+      <a href="{{ path(routeName, {'node': nid}) }}" class="card_link">
+        <span>{{ 'En savoir plus'|t }}</span>
+        <img src="{{ theme_url ~ '/front/assets/images/green_arrow.png' }}" alt="">
+      </a>
+    </div>
+  </div>
+{% endmacro getActualiteItemByRef %}

@@ -1,0 +1,34 @@
+uuid: 7b1cab04-7f36-4a6c-8e58-3a7ace7baae0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_with_links.field_link_logo
+    - field.field.paragraph.logo_with_links.field_logo
+    - paragraphs.paragraphs_type.logo_with_links
+  module:
+    - link
+    - media_library
+id: paragraph.logo_with_links.default
+targetEntityType: paragraph
+bundle: logo_with_links
+mode: default
+content:
+  field_link_logo:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_logo:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

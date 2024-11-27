@@ -1,0 +1,181 @@
+{
+  // When enabled, the diff editor ignores changes in leading or trailing whitespace.
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
+
+  // Controls whether the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
+  "editor.formatOnPaste": true,
+
+  // Controls how the editor should render whitespace characters.
+  //  - none
+  //  - boundary: Render whitespace characters except for single spaces between words.
+  //  - selection: Render whitespace characters only on selected text.
+  //  - trailing: Render only trailing whitespace characters.
+  //  - all
+  "editor.renderWhitespace": "boundary",
+
+  // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty.
+  "editor.rulers": [
+    80
+  ],
+
+  // Configure [glob patterns](https://aka.ms/vscode-glob-patterns) of file associations to languages (for example `"*.extension": "html"`). Patterns will match on the absolute path of a file if they contain a path separator and will match on the name of the file otherwise. These have precedence over the default associations of the languages installed.
+  "files.associations": {
+    "*.inc": "php",
+    "*.module": "php",
+    "*.install": "php",
+    "*.theme": "php",
+    "*.profile": "php",
+    "*.tpl.php": "php",
+    "*.test": "php",
+    "*.php": "php",
+    "*.info": "ini",
+    "*.html": "twig",
+  },
+
+  // Enable Emmet abbreviations in languages that are not supported by default. Add a mapping here between the language and Emmet supported language.
+  //  For example: `{"vue-html": "html", "javascript": "javascriptreact"}`
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+
+  // When enabled, will trim trailing whitespace when saving a file.
+  "files.trimTrailingWhitespace": true,
+
+  // Restore the undo stack when a file is reopened.
+  "files.restoreUndoStack": false,
+
+  // When enabled, insert a final new line at the end of the file when saving it.
+  "files.insertFinalNewline": true,
+
+  // Maximum amount of characters per line (0 = disable).
+  "html.format.wrapLineLength": 80,
+
+  //
+  // Controls Visual Studio Code telemetry, first-party extension telemetry, and participating third-party extension telemetry. Some third party extensions might not respect this setting. Consult the specific extension's documentation to be sure. Telemetry helps us better understand how Visual Studio Code is performing, where improvements need to be made, and how features are being used. Read more about the [data we collect](https://aka.ms/vscode-telemetry) and our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839). A full restart of the application is necessary for crash reporting changes to take effect.
+  //
+  // &nbsp;
+  //
+  // The following table outlines the data sent with each setting:
+  //
+  // |       | Crash Reports | Error Telemetry | Usage Data |
+  // |:------|:---------------------:|:---------------:|:--------------:|
+  // | all   |            ✓          |        ✓        |        ✓       |
+  // | error |            ✓          |        ✓        |        -       |
+  // | crash |            ✓          |        -        |        -       |
+  // | off   |            -          |        -        |        -       |
+  //
+  //
+  // &nbsp;
+  //
+  // ****Note:*** If this setting is 'off', no telemetry will be sent regardless of other telemetry settings. If this setting is set to anything except 'off' and telemetry is disabled with deprecated settings, no telemetry will be sent.*
+  //
+  //  - all: Sends usage data, errors, and crash reports.
+  //  - error: Sends general error telemetry and crash reports.
+  //  - crash: Sends OS level crash reports.
+  //  - off: Disables all product telemetry.
+  "telemetry.telemetryLevel": "off",
+
+  /* PHP Intelephense (bmewburn.vscode-intelephense-client) */
+  "intelephense.environment.includePaths": [
+    "core/",
+    "core/includes",
+    "../vendor/"
+  ],
+
+  // Control if this sniffer is enabled for PHP files or not.
+  "phpsab.snifferEnable": true,
+
+  // Optional. The default config to use or global standard. Can be overridden if auto search is enabled.
+  "phpsab.standard": "Drupal,DrupalPractice",
+
+  // Additional arguments passed to phpcs
+  "phpsab.snifferArguments": [
+    "--extensions=inc,theme,install,module,profile,php,phtml"
+  ],
+
+  // Additional arguments passed to phpcbf
+  "phpsab.fixerArguments": [
+    "--extensions=inc,theme,install,module,profile,php,phtml"
+  ],
+
+  // Defines a default formatter which takes precedence over all other formatter settings. Must be the identifier of an extension contributing a formatter.
+	//  - null: None
+	//  - DEVSENSE.composer-php-vscode: All-in-One composer integration, quick actions, commands, automatic installation, tasks, code lenses, diagnostics, and composer.json IntelliSense.
+	//  - vscode.css-language-features: Provides rich language support for CSS, LESS and SCSS files.
+	//  - vscode.html-language-features: Provides rich language support for HTML and Handlebar files
+	//  - vscode.json-language-features: Provides rich language support for JSON files.
+	//  - vscode.markdown-language-features: Provides rich language support for Markdown.
+	//  - vscode.markdown-math: Adds math support to Markdown in notebooks.
+	//  - neilbrayfield.php-docblocker: A simple, dependency free PHP specific DocBlocking package
+	//  - vscode.php-language-features: Provides rich language support for PHP files.
+	//  - mblode.twig-language-2: Snippets, Syntax Highlighting, Hover, and Formatting for Twig
+	//  - vscode.typescript-language-features: Provides rich language support for JavaScript and TypeScript.
+	//  - dbaeumer.vscode-eslint: Integrates ESLint JavaScript into VS Code.
+	//  - bmewburn.vscode-intelephense-client: PHP code intelligence for Visual Studio Code
+	//  - valeryanm.vscode-phpsab: PHP Sniffer & Beautifier for Visual Studio Code
+	//  - redhat.vscode-yaml: YAML Language Support by Red Hat, with built-in Kubernetes syntax support
+	//  - vscode.configuration-editing: Provides capabilities (advanced IntelliSense, auto-fixing) in configuration files like settings, launch, and extension recommendation files.
+	//  - vscode.debug-auto-launch: Helper for auto-attach feature when node-debug extensions are not active.
+	//  - vscode.debug-server-ready: Open URI in browser if server under debugging is ready.
+	//  - vscode.emmet: Emmet support for VS Code
+	//  - vscode.extension-editing: Provides linting capabilities for authoring extensions.
+	//  - vscode.git: Git SCM Integration
+	//  - vscode.git-base: Git static contributions and pickers.
+	//  - mhutchie.git-graph: View a Git Graph of your repository, and perform Git actions from the graph.
+	//  - shaharkazaz.git-merger: Simplifies the git merge process
+	//  - donjayamanne.githistory: View git log, file history, compare branches or commits
+	//  - vscode.github: GitHub features for VS Code
+	//  - vscode.github-authentication: GitHub Authentication Provider
+	//  - eamodio.gitlens: Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+	//  - vscode.grunt: Extension to add Grunt capabilities to VS Code.
+	//  - vscode.gulp: Extension to add Gulp capabilities to VSCode.
+	//  - vscode.ipynb: Provides basic support for opening and reading Jupyter's .ipynb notebook files
+	//  - vscode.jake: Extension to add Jake capabilities to VS Code.
+	//  - ms-vscode.js-debug: An extension for debugging Node.js programs and Chrome.
+	//  - ms-vscode.js-debug-companion: Companion extension to js-debug that provides capability for remote debugging
+	//  - vscode.media-preview: Provides VS Code's built-in previews for images, audio, and video
+	//  - vscode.merge-conflict: Highlighting and commands for inline merge conflicts.
+	//  - vscode.microsoft-authentication: Microsoft authentication provider
+	//  - vscode.npm: Extension to add task support for npm scripts.
+	//  - xdebug.php-debug: Debug support for PHP with Xdebug
+	//  - vscode.references-view: Reference Search results as separate, stable view in the sidebar
+	//  - vscode.search-result: Provides syntax highlighting and language features for tabbed search results.
+	//  - vscode.simple-browser: A very basic built-in webview for displaying web content.
+	//  - vscode.tunnel-forwarding: Allows forwarding local ports to be accessible over the internet.
+	//  - stanislav.vscode-drupal: A Drupal extension for VS Code
+	//  - ms-vscode.vscode-js-profile-table: Text visualizer for profiles taken from the JavaScript debugger
+  "[php]": {
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  },
+
+  // Points to the PHP executable.
+  "php.validate.executablePath": "/usr/local/etc/php",
+
+  // Whether the linter is run on save or on type.
+  "php.validate.run": "onType",
+
+  // Whether you want to use int instead of integer and bool instead of boolean.
+  "php-docblocker.useShortNames": true,
+
+  // Enables ESLint as a formatter.
+  "eslint.format.enable": true,
+
+  "prettier.configPath": "web/core/.prettierrc.json",
+
+  // Specifies how the working directories ESLint is using are computed. ESLint resolves configuration files (e.g. `eslintrc`, `.eslintignore`) relative to a working directory so it is important to configure this correctly.
+  "eslint.workingDirectories": [
+    "./web"
+  ],
+
+  // Configure settings to be overridden for the javascript language.
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  },
+
+  // Path to the composer executable.
+  "composer.executablePath": "/usr/local/bin/composer",
+
+}

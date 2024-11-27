@@ -1,0 +1,22 @@
+uuid: 1a5b91a3-6ce4-43e9-8f4d-557703f92df1
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: nutribiotek_help
+theme: nutribiotek
+region: header
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

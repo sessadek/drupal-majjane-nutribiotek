@@ -1,0 +1,10 @@
+uuid: 4d71f195-8a69-4fbc-b4f6-3317dab16267
+langcode: en
+status: true
+dependencies: {  }
+id: produit_agricole
+label: 'Produit Agricole'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

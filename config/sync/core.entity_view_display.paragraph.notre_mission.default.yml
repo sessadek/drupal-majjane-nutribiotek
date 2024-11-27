@@ -1,0 +1,40 @@
+uuid: a2c93b36-8846-407e-b747-8a5ea62b8724
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.notre_mission.field_body
+    - field.field.paragraph.notre_mission.field_libelle
+    - field.field.paragraph.notre_mission.field_title
+    - paragraphs.paragraphs_type.notre_mission
+  module:
+    - text
+id: paragraph.notre_mission.default
+targetEntityType: paragraph
+bundle: notre_mission
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

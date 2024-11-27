@@ -1,0 +1,24 @@
+uuid: 747271f9-76ae-4cda-a35f-164624a1deab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.produit_agricole
+  module:
+    - text
+id: paragraph.produit_agricole.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: produit_agricole
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

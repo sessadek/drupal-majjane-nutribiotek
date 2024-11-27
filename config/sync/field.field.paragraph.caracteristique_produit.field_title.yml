@@ -1,0 +1,19 @@
+uuid: bcef61e9-ab23-4293-b480-d2e2fa286203
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.caracteristique_produit
+id: paragraph.caracteristique_produit.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: caracteristique_produit
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 7f958d03-b406-46d7-af66-e2f8e1151eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.a_propos_qui_somme_nous
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.a_propos_qui_somme_nous
+target_entity_type_id: paragraph
+target_bundle: a_propos_qui_somme_nous
+default_langcode: site_default
+language_alterable: false

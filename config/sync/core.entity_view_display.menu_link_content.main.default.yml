@@ -1,0 +1,28 @@
+uuid: 4bcac619-e3b2-445e-ad3e-11c211b001dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.main.field_media_image
+    - system.menu.main
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

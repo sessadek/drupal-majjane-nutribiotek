@@ -1,0 +1,18 @@
+uuid: 53d34030-4899-4712-a412-ba1cc0277ea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.notre_offre
+id: paragraph.notre_offre.created
+field_name: created
+entity_type: paragraph
+bundle: notre_offre
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

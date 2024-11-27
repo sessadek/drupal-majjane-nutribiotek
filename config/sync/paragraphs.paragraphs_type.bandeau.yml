@@ -1,0 +1,10 @@
+uuid: d0a4421b-cbf9-4911-bfe8-1ee6ec73e588
+langcode: en
+status: true
+dependencies: {  }
+id: bandeau
+label: Bandeau
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

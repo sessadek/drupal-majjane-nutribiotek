@@ -1,0 +1,19 @@
+uuid: 70b07a3f-b2c4-406f-969e-249abbefe19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_libelle
+    - paragraphs.paragraphs_type.hp_qui_somme_nous
+id: paragraph.hp_qui_somme_nous.field_libelle
+field_name: field_libelle
+entity_type: paragraph
+bundle: hp_qui_somme_nous
+label: Libelle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

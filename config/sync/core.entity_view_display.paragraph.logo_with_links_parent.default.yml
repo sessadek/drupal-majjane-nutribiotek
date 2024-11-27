@@ -1,0 +1,24 @@
+uuid: 5d63df61-299f-4785-a161-f9dad1034153
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_with_links_parent.field_content_parent
+    - paragraphs.paragraphs_type.logo_with_links_parent
+  module:
+    - entity_reference_revisions
+id: paragraph.logo_with_links_parent.default
+targetEntityType: paragraph
+bundle: logo_with_links_parent
+mode: default
+content:
+  field_content_parent:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

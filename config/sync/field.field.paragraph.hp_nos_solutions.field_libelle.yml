@@ -1,0 +1,19 @@
+uuid: b8b20aae-b5d5-4cce-845b-a52b9822eec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_libelle
+    - paragraphs.paragraphs_type.hp_nos_solutions
+id: paragraph.hp_nos_solutions.field_libelle
+field_name: field_libelle
+entity_type: paragraph
+bundle: hp_nos_solutions
+label: Libelle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

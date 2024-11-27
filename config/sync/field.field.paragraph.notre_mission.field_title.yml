@@ -1,0 +1,19 @@
+uuid: fa503c95-3813-44fb-958e-26e6f1df9bf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.notre_mission
+id: paragraph.notre_mission.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: notre_mission
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

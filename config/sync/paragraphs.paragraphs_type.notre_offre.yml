@@ -1,0 +1,10 @@
+uuid: 8c332245-17bf-4bd9-8094-1cde01992854
+langcode: en
+status: true
+dependencies: {  }
+id: notre_offre
+label: 'Notre offre'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 7c94e80f-2573-48b6-860f-1c556294c963
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wg5cCxB554rXZx4TIzUACcXRXe-VSodwqcq-_QS4Tv0
+name: 'S’abonner à la newsletter'
+id: default
+description: 'Abonnez-vous pour ne rien manquer de nos news.'
+format: plain
+priority: 0
+receipt: true
+from_name: Nutribiotek
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: contact@majjane.ma
+hyperlinks: false
+allowed_handlers:
+  0: '0'
+  simplenews_all: '0'
+new_account: none
+access: default
+reason: ''
+weight: 0

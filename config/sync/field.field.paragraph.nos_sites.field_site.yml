@@ -1,0 +1,115 @@
+uuid: e0320719-d577-4df7-b678-2cf6e8eb00c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_site
+    - paragraphs.paragraphs_type.nos_sites
+    - paragraphs.paragraphs_type.site
+  module:
+    - entity_reference_revisions
+id: paragraph.nos_sites.field_site
+field_name: field_site
+entity_type: paragraph
+bundle: nos_sites
+label: Site
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      site: site
+    negate: 0
+    target_bundles_drag_drop:
+      a_propos_mot_directeur:
+        weight: 31
+        enabled: false
+      a_propos_qui_somme_nous:
+        weight: 32
+        enabled: false
+      actualite:
+        weight: 33
+        enabled: false
+      bandeau:
+        weight: 34
+        enabled: false
+      contact:
+        weight: 35
+        enabled: false
+      content_link:
+        weight: 36
+        enabled: false
+      full_image_text:
+        weight: 37
+        enabled: false
+      hero_home:
+        weight: 38
+        enabled: false
+      hp_actualites:
+        weight: 39
+        enabled: false
+      hp_nos_solutions:
+        weight: 40
+        enabled: false
+      hp_offre_emploi:
+        weight: 41
+        enabled: false
+      hp_partenaires:
+        weight: 42
+        enabled: false
+      hp_qui_somme_nous:
+        weight: 43
+        enabled: false
+      hp_solution:
+        weight: 44
+        enabled: false
+      nos_produits:
+        weight: 45
+        enabled: false
+      nos_sites:
+        weight: 46
+        enabled: false
+      nos_sponsors:
+        weight: 47
+        enabled: false
+      nos_valeurs:
+        weight: 48
+        enabled: false
+      notre_mission:
+        weight: 49
+        enabled: false
+      notre_offre:
+        weight: 50
+        enabled: false
+      notre_strategie:
+        weight: 51
+        enabled: false
+      product_category:
+        weight: 52
+        enabled: false
+      product_category_text:
+        weight: 53
+        enabled: false
+      produit:
+        weight: 54
+        enabled: false
+      produit_agricole:
+        weight: 55
+        enabled: false
+      site:
+        weight: 30
+        enabled: true
+      strategie:
+        weight: 56
+        enabled: false
+      text_content:
+        weight: 57
+        enabled: false
+      valeur:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

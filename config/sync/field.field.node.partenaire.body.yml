@@ -1,0 +1,24 @@
+uuid: 78fc8a46-3c53-4a43-be94-0ad7c2899be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.partenaire
+  module:
+    - text
+id: node.partenaire.body
+field_name: body
+entity_type: node
+bundle: partenaire
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

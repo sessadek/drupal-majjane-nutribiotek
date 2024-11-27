@@ -1,0 +1,20 @@
+uuid: 6b8d3fb3-e103-4d38-9176-a6f36c1d63b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_produit_similaire
+field_name: field_produit_similaire
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

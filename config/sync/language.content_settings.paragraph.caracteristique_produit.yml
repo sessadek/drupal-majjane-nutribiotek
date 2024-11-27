@@ -1,0 +1,18 @@
+uuid: 026ca84e-0781-408f-ac8a-3e0e0a447c4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.caracteristique_produit
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.caracteristique_produit
+target_entity_type_id: paragraph
+target_bundle: caracteristique_produit
+default_langcode: site_default
+language_alterable: false

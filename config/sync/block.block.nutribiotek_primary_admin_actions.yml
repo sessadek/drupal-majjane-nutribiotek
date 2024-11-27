@@ -1,0 +1,20 @@
+uuid: 25e5283f-5864-4b5a-b910-59bc44d4d2b8
+langcode: en
+status: false
+dependencies:
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: nutribiotek_primary_admin_actions
+theme: nutribiotek
+region: header
+weight: -11
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

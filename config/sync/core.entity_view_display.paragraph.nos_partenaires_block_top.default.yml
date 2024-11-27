@@ -1,0 +1,61 @@
+uuid: b7a6c93c-891c-4d04-8a7d-67cf269157e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nos_partenaires_block_top.field_accordion
+    - field.field.paragraph.nos_partenaires_block_top.field_body
+    - field.field.paragraph.nos_partenaires_block_top.field_image
+    - field.field.paragraph.nos_partenaires_block_top.field_libelle
+    - field.field.paragraph.nos_partenaires_block_top.field_title
+    - paragraphs.paragraphs_type.nos_partenaires_block_top
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.nos_partenaires_block_top.default
+targetEntityType: paragraph
+bundle: nos_partenaires_block_top
+mode: default
+content:
+  field_accordion:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,49 @@
+uuid: c73d12a6-cea7-49fa-8c22-a44c994fc507
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.produit.body
+    - field.field.node.produit.field_bandeau
+    - field.field.node.produit.field_caracteristique_produit
+    - field.field.node.produit.field_decouvrir_produit
+    - field.field.node.produit.field_media_doc
+    - field.field.node.produit.field_media_image
+    - field.field.node.produit.field_product_category
+    - field.field.node.produit.field_produit_similaire
+    - field.field.node.produit.field_title
+    - node.type.produit
+  module:
+    - text
+    - user
+id: node.produit.teaser
+targetEntityType: node
+bundle: produit
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_bandeau: true
+  field_bandeau1g: true
+  field_caracteristique_produit: true
+  field_contact: true
+  field_decouvrir_produit: true
+  field_media_doc: true
+  field_media_image: true
+  field_product_category: true
+  field_produit_similaire: true
+  field_title: true
+  langcode: true

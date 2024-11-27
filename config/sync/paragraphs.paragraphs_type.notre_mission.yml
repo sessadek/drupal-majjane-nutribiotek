@@ -1,0 +1,10 @@
+uuid: 16f3c1f6-c05e-4e42-a486-a31902d46312
+langcode: en
+status: true
+dependencies: {  }
+id: notre_mission
+label: 'Notre mission'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

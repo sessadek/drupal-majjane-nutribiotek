@@ -1,0 +1,15 @@
+uuid: 92b1c3f1-3f57-4503-bc7b-60e5ebb59255
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Retours utilisateurs sur le site web'
+recipients:
+  - contact@nutribiotek.ma
+  - alt.cq-20x8l8w@yopmail.com
+reply: ''
+weight: 0
+message: 'Votre message a été envoyé.'
+redirect: ''

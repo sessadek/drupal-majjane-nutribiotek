@@ -1,0 +1,10 @@
+uuid: 2fbf9f8c-d88f-4e03-a362-e916b7e31dff
+langcode: en
+status: true
+dependencies: {  }
+id: hp_actualites
+label: 'HP - Actualites'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

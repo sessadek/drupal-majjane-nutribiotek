@@ -1,0 +1,21 @@
+uuid: 080b7a84-f7c2-4f20-9494-1f12fb385728
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_accept_condition
+id: contact_message.feedback.field_accept_condition
+field_name: field_accept_condition
+entity_type: contact_message
+bundle: feedback
+label: "Soumettre ce formulaire, j'accepte que les informatoions saisies soient exploitées dans le cadre de le deamande"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

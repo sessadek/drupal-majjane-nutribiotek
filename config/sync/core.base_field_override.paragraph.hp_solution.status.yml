@@ -1,0 +1,22 @@
+uuid: 548568c7-4cdc-4778-87ee-f8816fb678e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hp_solution
+id: paragraph.hp_solution.status
+field_name: status
+entity_type: paragraph
+bundle: hp_solution
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

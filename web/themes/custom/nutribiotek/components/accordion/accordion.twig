@@ -1,0 +1,23 @@
+{# accordion.twig #}
+{%
+  set classes = [
+    'info_item'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  
+    {{ 
+      include('nutribiotek:accordion-header',
+      {
+        'title': title,
+      }, with_context = false)
+    }}
+    {{ 
+      include('nutribiotek:accordion-body',
+      {
+        'body': body,
+      }, 
+      with_context = false)
+    }}
+  
+</div>

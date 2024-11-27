@@ -1,0 +1,19 @@
+uuid: 79f2ce22-4605-4b96-8125-e5e577a5c831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_libelle
+    - paragraphs.paragraphs_type.a_propos_qui_somme_nous
+id: paragraph.a_propos_qui_somme_nous.field_libelle
+field_name: field_libelle
+entity_type: paragraph
+bundle: a_propos_qui_somme_nous
+label: Libelle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

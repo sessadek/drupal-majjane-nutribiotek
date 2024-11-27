@@ -1,0 +1,36 @@
+
+.close_button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.4s ease;  /* Smooth transition */
+  transform: rotate(45deg);
+  filter: brightness(0) saturate(100%);
+}
+.info_content {
+  transition: all 0.3s ease-in-out;  /* Smooth transition */
+  overflow: hidden;
+  display: none;
+}
+.active_close{
+  transform: none;
+  filter: none;
+}
+.product_info_table thead tr th{
+  background: var(--CARABBEAN-GREEN, #5CC883);
+  color: var(--PURE-WHITE, #FFF);
+  font-family: var(--font-Helvetica);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 16px;
+}
+.product_info_table tbody tr td{
+  color: var(--PURE-BLACK, #000);
+  font-family: var(--font-Helvetica);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 16px;
+
+}

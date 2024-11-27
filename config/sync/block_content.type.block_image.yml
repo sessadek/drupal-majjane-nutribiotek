@@ -1,0 +1,8 @@
+uuid: 0bf91c0f-0ce5-47eb-8207-43faac5564be
+langcode: en
+status: true
+dependencies: {  }
+id: block_image
+label: 'Block Image'
+revision: false
+description: 'Block Pour le footer Logo'

@@ -1,0 +1,28 @@
+uuid: 8d9931b3-bd44-437d-bb7e-02b0ad79762c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.socail-links-nav.field_link_icon
+    - system.menu.socail-links-nav
+id: menu_link_content.socail-links-nav.default
+targetEntityType: menu_link_content
+bundle: socail-links-nav
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

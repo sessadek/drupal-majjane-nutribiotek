@@ -1,0 +1,39 @@
+uuid: 7415401d-8ae0-4b31-877d-7fdb20ec9f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nos_produits.field_libelle
+    - field.field.paragraph.nos_produits.field_produit_similaire
+    - field.field.paragraph.nos_produits.field_title
+    - paragraphs.paragraphs_type.nos_produits
+id: paragraph.nos_produits.default
+targetEntityType: paragraph
+bundle: nos_produits
+mode: default
+content:
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_produit_similaire:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: ca222ff0-4b73-40ad-a452-517a65663830
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_mobile
+    - field.storage.block_content.field_title_mobile
+id: block_content.contact_mobile.field_title_mobile
+field_name: field_title_mobile
+entity_type: block_content
+bundle: contact_mobile
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

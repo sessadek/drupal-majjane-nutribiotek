@@ -1,0 +1,75 @@
+uuid: 4263953b-9bc9-4e20-88ad-413547d3adbf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_mobile
+    - field.field.block_content.contact_mobile.body
+    - field.field.block_content.contact_mobile.field_emailmobile
+    - field.field.block_content.contact_mobile.field_link_mobile
+    - field.field.block_content.contact_mobile.field_phone_number
+    - field.field.block_content.contact_mobile.field_title_mobile
+  module:
+    - link
+    - telephone
+    - text
+id: block_content.contact_mobile.default
+targetEntityType: block_content
+bundle: contact_mobile
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_emailmobile:
+    type: email_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_link_mobile:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_phone_number:
+    type: telephone_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_mobile:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true

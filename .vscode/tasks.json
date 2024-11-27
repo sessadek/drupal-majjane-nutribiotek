@@ -1,0 +1,24 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Format Drupal PHP",
+      "type": "shell",
+      "command": "phpcbf",
+      "args": [
+        "--standard=Drupal",
+        "--ignore-annotations",
+        "--extensions=inc,install,module,php,profile,theme",
+        "--tab-width=2",
+        "-vvv", // very verbose
+        "${file}"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}

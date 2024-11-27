@@ -1,0 +1,18 @@
+uuid: f84a42b7-a6fa-4f93-af08-04a21310ec2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+id: block_content.contact.info
+field_name: info
+entity_type: block_content
+bundle: contact
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

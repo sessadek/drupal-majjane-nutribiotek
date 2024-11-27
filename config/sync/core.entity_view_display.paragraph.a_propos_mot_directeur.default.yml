@@ -1,0 +1,50 @@
+uuid: d4c0ecb8-2b76-4fd5-bdac-9872cdc4e5ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.a_propos_mot_directeur.field_body
+    - field.field.paragraph.a_propos_mot_directeur.field_image
+    - field.field.paragraph.a_propos_mot_directeur.field_libelle
+    - field.field.paragraph.a_propos_mot_directeur.field_title
+    - paragraphs.paragraphs_type.a_propos_mot_directeur
+  module:
+    - text
+id: paragraph.a_propos_mot_directeur.default
+targetEntityType: paragraph
+bundle: a_propos_mot_directeur
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

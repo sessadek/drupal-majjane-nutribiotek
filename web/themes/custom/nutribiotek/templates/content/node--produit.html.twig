@@ -1,0 +1,179 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - node.getCreatedTime() will return the node creation timestamp.
+ *   - node.hasField('field_example') returns TRUE if the node bundle includes
+ *     field_example. (This does not indicate the presence of a value in this
+ *     field.)
+ *   - node.isPublished() will return whether the node is published or not.
+ *   Calling other methods, such as node.delete(), will result in an exception.
+ *   See \Drupal\node\Entity\Node for a full list of public properties and
+ *   methods for the node object.
+ * - label: (optional) The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: (optional) Themed creation date field.
+ * - author_name: (optional) Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ *
+ * @see template_preprocess_node()
+ *
+ */
+#}
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+  {# Render the Bandeau Section (field_bandeau1g) #}
+  {% if content.field_bandeau1g is not empty %}
+    {{ content.field_bandeau1g }}
+  {% endif %}
+
+  <div{{ content_attributes }}>
+    <section class="product_presentation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-12 px-5 d-flex align-items-center">
+            {% if node.hasField('field_media_image') %}
+              <div class="single_product_img w-100">{{ content.field_media_image }}</div>
+            {% endif %}
+          </div>
+          <div class="col-lg-7 col-md-6 col-12  px-3 d-flex align-items-center my-lg-0 my-md-0 my-4">
+            <div>
+              {% if node.hasField('field_title') %}
+                <h2 class="section_title mb-4"><strong>{{ content.field_title }}</strong></h2>
+              {% endif %}
+              {% if content.body %}
+                <div>{{ content.body }}</div>
+              {% endif %}
+              {% if node.hasField('field_media_doc') %}
+                <a 
+                  href="{{ file_url(pdf.uri.value) }}" 
+                  type="{{ pdf.filemime.value }}" 
+                  title="{{ pdf.filename.value }}" 
+                  class="primary_btn_global mt-lg-5 mt-lg-4 mt-3"
+                  download>
+                  <span>
+                    <span>{% trans %}Télécharger la fiche technique{% endtrans %}</span>
+                    <img src="{{ theme_url ~ '/front/assets/images/arrow.png' }}" class="arrow_icon" alt="arrow icon">
+                  </span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="more_details container px-5 py-4 mb-5">
+      <div class="row align-items-end">
+        <div class="col-lg-6 col-12">
+          <h2 class="section_tag_white">{{ site_name }}</h2>
+          <h3 class="section_title white_cr">{% trans %}Plus de <strong>détails</strong>{% endtrans %}</h3>
+        </div>
+        <div class="col-lg-6 col-12 d-flex align-items-center">
+          {% if node.hasField('field_decouvrir_produit') %}
+          <div class="p_standard white_cr">
+            {{ content.field_decouvrir_produit }}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% if node.hasField('field_caracteristique_produit') %}
+    <section class="product_info_container container px-lg-5">
+      {{ content.field_caracteristique_produit }}
+    </section>
+    {% endif %}
+    {% if node.hasField('field_produit_similaire') %}
+      <section class="our_products my-5">
+        <div class="container d-flex flex-column align-items-center mb-4">
+          <h2 class="section_tag_main mb-4">{{ site_name }}</h2>
+          <h3 class="section_title ">{% trans %}Produits <strong>similaire{% endtrans %}</strong></h3>
+        </div>
+        <div class="container ">
+          {% import '@nutribiotek/templates/macros/produit-item.html.twig' as produitItem %}
+          <div class="row mb-5">
+            {% for key, item in content.field_produit_similaire %}
+              {% if key|first != '#' %}
+              {% set routeName = item['#url'].routeName %}
+              {% set entityType = item['#options'].entity_type %}
+              {% set entityItem = item['#entity'] %}
+              {% set nid = entityItem.nid.value %}
+              {% set image = item['#entity'].field_media_image.entity.field_media_image %}
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                  {{ produitItem.getActualiteItemByRef(
+                    routeName, 
+                    nid, 
+                    item['#entity'].field_title, 
+                    item['#entity'].body, 
+                    image) }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+  </div>
+</article>
+{# Render the Contact Section (field_contact) #}
+    {% if content.field_contact is not empty %}
+      {{ content.field_contact }}
+    {% endif %}

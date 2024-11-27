@@ -1,0 +1,29 @@
+uuid: daa34b1c-edbd-4e66-8141-a19374d2067d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_media_image
+    - media.type.menu_image_item
+    - system.menu.main
+id: menu_link_content.main.field_media_image
+field_name: field_media_image
+entity_type: menu_link_content
+bundle: main
+label: 'Media image'
+description: 'Taille recommandée 158x158'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      menu_image_item: menu_image_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

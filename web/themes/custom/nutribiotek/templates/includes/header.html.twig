@@ -1,0 +1,20 @@
+{% 
+  set classes = [
+    'd-flex',
+    'align-items-lg-center',
+    'align-items-md-center',
+    'align-items-start',
+    'justify-content-between',
+    'container-fluid',
+    'mt-3 main_header'
+  ]
+%}
+<header class="{{ classes|join(" ") }}" role="banner">
+  {% if page.header %}
+    {{ page.header }}
+  {% endif %}
+  {% if page.header_right %}
+    {{ page.header_right }}
+  {% endif %}
+  <button type="button" class="colapse_btn menu_button"><img src="{{ '/' ~ active_theme_path() ~ '/front/assets/images/collapse_btn.svg' }}" alt="collpse boutton"></button>
+</header>

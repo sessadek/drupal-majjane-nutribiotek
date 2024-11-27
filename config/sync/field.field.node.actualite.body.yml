@@ -1,0 +1,26 @@
+uuid: 5b76e671-6904-4feb-b163-09ed42bf6067
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.actualite
+  module:
+    - text
+id: node.actualite.body
+field_name: body
+entity_type: node
+bundle: actualite
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

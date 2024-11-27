@@ -1,0 +1,10 @@
+uuid: fd43a272-3530-4988-88bd-c36fcdf1c4bb
+langcode: en
+status: true
+dependencies: {  }
+id: a_propos_qui_somme_nous
+label: 'A propos - Qui somme nous?'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

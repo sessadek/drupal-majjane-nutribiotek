@@ -1,0 +1,76 @@
+uuid: cbca8f19-8e77-4c54-9900-ff8c67dd91ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_accept_condition
+    - field.field.contact_message.feedback.field_city
+    - field.field.contact_message.feedback.field_last_name
+    - field.field.contact_message.feedback.field_phone
+  module:
+    - telephone
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_accept_condition:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_city:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  mail:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  preview: true
+  subject: true

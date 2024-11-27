@@ -1,0 +1,100 @@
+uuid: 279bd42e-4586-429e-a73a-d3973f1864b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_strategie
+    - paragraphs.paragraphs_type.notre_strategie
+    - paragraphs.paragraphs_type.strategie
+  module:
+    - entity_reference_revisions
+id: paragraph.notre_strategie.field_strategie
+field_name: field_strategie
+entity_type: paragraph
+bundle: notre_strategie
+label: Strategie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      strategie: strategie
+    negate: 0
+    target_bundles_drag_drop:
+      a_propos_mot_directeur:
+        weight: 26
+        enabled: false
+      a_propos_qui_somme_nous:
+        weight: 27
+        enabled: false
+      actualite:
+        weight: 28
+        enabled: false
+      contact:
+        weight: 29
+        enabled: false
+      content_image:
+        weight: 30
+        enabled: false
+      content_link:
+        weight: 31
+        enabled: false
+      content_link_image:
+        weight: 32
+        enabled: false
+      hero_home:
+        weight: 33
+        enabled: false
+      hp_actualites:
+        weight: 34
+        enabled: false
+      hp_nos_solutions:
+        weight: 35
+        enabled: false
+      hp_offre_emploi:
+        weight: 36
+        enabled: false
+      hp_partenaires:
+        weight: 37
+        enabled: false
+      hp_qui_somme_nous:
+        weight: 38
+        enabled: false
+      hp_solution:
+        weight: 39
+        enabled: false
+      nos_sponsors:
+        weight: 40
+        enabled: false
+      nos_valeurs:
+        weight: 41
+        enabled: false
+      notre_mission:
+        weight: 42
+        enabled: false
+      notre_offre:
+        weight: 43
+        enabled: false
+      notre_strategie:
+        weight: 44
+        enabled: false
+      product_category:
+        weight: 45
+        enabled: false
+      produit:
+        weight: 46
+        enabled: false
+      strategie:
+        weight: 25
+        enabled: true
+      text_content:
+        weight: 47
+        enabled: false
+      valeur:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

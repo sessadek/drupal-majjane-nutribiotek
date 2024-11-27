@@ -1,0 +1,22 @@
+uuid: 8ed8c909-196c-4d3d-82f1-5034c3a6e128
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: actualite
+label: Actualite
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  7bd73344-2091-4713-99b1-47318f45c45c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7bd73344-2091-4713-99b1-47318f45c45c
+    context_mapping:
+      node: node
+    bundles:
+      actualite: actualite
+selection_logic: and
+weight: -5
+relationships: {  }

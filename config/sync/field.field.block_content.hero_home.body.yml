@@ -1,0 +1,26 @@
+uuid: 80c553e3-fc0c-40e1-b029-8224db6164c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_home
+    - field.storage.block_content.body
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.hero_home.body
+field_name: body
+entity_type: block_content
+bundle: hero_home
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

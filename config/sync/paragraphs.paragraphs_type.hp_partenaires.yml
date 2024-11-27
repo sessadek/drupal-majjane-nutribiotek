@@ -1,0 +1,10 @@
+uuid: 4e4fbfe7-f884-43ad-8d2f-ffa836dfce36
+langcode: en
+status: true
+dependencies: {  }
+id: hp_partenaires
+label: 'HP - Partenaires'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

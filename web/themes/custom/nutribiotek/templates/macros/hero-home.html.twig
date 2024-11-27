@@ -1,0 +1,28 @@
+{% macro HeroHome(title, body, link, video) %}
+  {% if (video) %}
+      {% set media_entity = video.0['#media'] %}
+      {% if media_entity %}
+          {% set video_file = media_entity.field_media_video_file.entity %}
+          {% if video_file %}
+              {% set video_url = file_url(video_file.uri.value) %}
+              <video class="responsive-video" autoplay muted loop playsinline>
+                  <source src="{{ video_url }}" type="video/mp4">
+              </video>
+          {% endif %}
+      {% endif %}
+  {% endif %}
+  <div>
+    {% if (title) %}
+      <h1 class="hero_title">{{ title}}</h1>
+    {% endif %}
+    {% if (body) %}
+      <div class="heo_paragraph">{{ body }}</div>
+    {% endif %}
+    {% if (link) %}
+      {{ include('@nutribiotek/components/link-btn.html.twig', {'link': link}) }}
+    {% endif %}
+  </div>
+  <button class="scroll_down_btn">
+    <img src="{{ '/' ~ active_theme_path() ~ '/front/assets/images/scrol_down.svg' }}" alt="scroll down">
+  </button>
+{% endmacro HeroHome %}

@@ -1,0 +1,10 @@
+uuid: bbe600ff-4a7e-409c-b561-981e8590fc90
+langcode: en
+status: true
+dependencies: {  }
+id: content_link
+label: 'Content Link'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

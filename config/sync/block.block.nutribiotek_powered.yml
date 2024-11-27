@@ -1,0 +1,22 @@
+uuid: 54efc3b7-06a7-4692-bf07-2270f3b518a6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: nutribiotek_powered
+theme: nutribiotek
+region: header
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

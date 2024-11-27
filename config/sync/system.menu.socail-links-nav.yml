@@ -1,0 +1,8 @@
+uuid: fd11d07f-9a25-4780-8f83-25d0c45070b9
+langcode: fr
+status: true
+dependencies: {  }
+id: socail-links-nav
+label: 'Socail links nav'
+description: ''
+locked: false

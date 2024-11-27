@@ -1,0 +1,25 @@
+uuid: c5469c41-579a-44e1-9c6d-9fcf328ea340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produit_similaire.field_produit_similaire
+    - paragraphs.paragraphs_type.produit_similaire
+id: paragraph.produit_similaire.default
+targetEntityType: paragraph
+bundle: produit_similaire
+mode: default
+content:
+  field_produit_similaire:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

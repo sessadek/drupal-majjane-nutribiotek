@@ -1,0 +1,13 @@
+uuid: fb41d442-2ddf-4767-85ea-cd1ddabf536b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - webform
+_core:
+  default_config_hash: n4gTFiUsdp7gw6yWUlDbKFEasZLCgXWWCmm7eJejay0
+id: webform_submission_make_unsticky_action
+label: 'Retirer des favoris/démarquer la soumission'
+type: webform_submission
+plugin: webform_submission_make_unsticky_action
+configuration: {  }

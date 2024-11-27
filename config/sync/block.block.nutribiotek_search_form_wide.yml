@@ -1,0 +1,23 @@
+uuid: 5ac17138-af7e-4fd1-a045-870d2ef8761d
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: nutribiotek_search_form_wide
+theme: nutribiotek
+region: header
+weight: -10
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: e06dd7be-cd92-4879-82a7-0d04a6c18104
+langcode: en
+status: true
+dependencies: {  }
+id: nos_sites
+label: 'Nos Sites'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

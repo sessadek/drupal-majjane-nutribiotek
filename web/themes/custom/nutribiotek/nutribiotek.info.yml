@@ -1,0 +1,22 @@
+name: Nutribiotek
+type: theme
+description: 'Nutribiotek is a responsive, customizable Drupal theme designed for agriculture and farming businesses. It offers flexible layouts, e-commerce support, and industry-specific content types, making it easy to showcase your products and services professionally on any device.'
+core_version_requirement: ^10 || ^11
+base theme: stable9
+libraries:
+  - nutribiotek/bootstrap-cdn
+  - nutribiotek/global
+  - nutribiotek/search
+logo: ./logo.svg
+regions:
+  header: 'Header'
+  header_right: 'Header Right'
+  content: 'Content'
+  footer: 'Footer'
+  footer_top: 'Footer Top'
+  footer_bottom_menu: 'Footer Bottom Menu'
+  footer_bottom_right: 'Footer Bottom Right'
+  footer_bottom: 'Footer Bottom'
+  mobile_nav: 'Mobile Header'
+  mobile_nav_menu: 'Mobile Header menu'
+  mobile_nav_contact: 'Mobile Header contact'

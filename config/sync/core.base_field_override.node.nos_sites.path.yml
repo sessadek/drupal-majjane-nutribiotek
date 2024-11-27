@@ -1,0 +1,20 @@
+uuid: 9dad76a9-fb21-4172-b6bd-4f922d71be5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nos_sites
+  module:
+    - path
+id: node.nos_sites.path
+field_name: path
+entity_type: node
+bundle: nos_sites
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

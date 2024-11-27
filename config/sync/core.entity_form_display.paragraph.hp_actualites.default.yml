@@ -1,0 +1,64 @@
+uuid: 6c0056ff-63fb-401d-8c90-4b18706dfef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hp_actualites.field_actualites
+    - field.field.paragraph.hp_actualites.field_body
+    - field.field.paragraph.hp_actualites.field_libelle
+    - field.field.paragraph.hp_actualites.field_link
+    - field.field.paragraph.hp_actualites.field_title
+    - paragraphs.paragraphs_type.hp_actualites
+  module:
+    - link
+    - text
+id: paragraph.hp_actualites.default
+targetEntityType: paragraph
+bundle: hp_actualites
+mode: default
+content:
+  field_actualites:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_libelle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

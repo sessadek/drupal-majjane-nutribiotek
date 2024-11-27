@@ -1,0 +1,160 @@
+uuid: e10bc9d1-7bd8-4b1b-99eb-6c25c7bbbd73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.home_page
+    - paragraphs.paragraphs_type.contact
+    - paragraphs.paragraphs_type.hero_home
+    - paragraphs.paragraphs_type.hp_actualites
+    - paragraphs.paragraphs_type.hp_nos_solutions
+    - paragraphs.paragraphs_type.hp_offre_emploi
+    - paragraphs.paragraphs_type.hp_partenaires
+    - paragraphs.paragraphs_type.hp_qui_somme_nous
+    - paragraphs.paragraphs_type.logo_with_links_parent
+    - paragraphs.paragraphs_type.nos_sponsors
+    - paragraphs.paragraphs_type.notre_offre
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_content
+field_name: field_content
+entity_type: node
+bundle: home_page
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hp_qui_somme_nous: hp_qui_somme_nous
+      hp_partenaires: hp_partenaires
+      hero_home: hero_home
+      nos_sponsors: nos_sponsors
+      hp_offre_emploi: hp_offre_emploi
+      contact: contact
+      notre_offre: notre_offre
+      hp_nos_solutions: hp_nos_solutions
+      hp_actualites: hp_actualites
+      logo_with_links_parent: logo_with_links_parent
+    negate: 0
+    target_bundles_drag_drop:
+      a_propos_mot_directeur:
+        weight: 40
+        enabled: false
+      a_propos_qui_somme_nous:
+        weight: 41
+        enabled: false
+      accordion:
+        weight: 39
+        enabled: false
+      bandeau:
+        weight: 42
+        enabled: false
+      caracteristique_produit:
+        weight: 43
+        enabled: false
+      contact:
+        weight: 16
+        enabled: true
+      content_link:
+        weight: 8
+        enabled: false
+      full_image_text:
+        weight: 46
+        enabled: false
+      hero_home:
+        weight: 10
+        enabled: true
+      hp_actualites:
+        weight: 24
+        enabled: true
+      hp_nos_solutions:
+        weight: 19
+        enabled: true
+      hp_offre_emploi:
+        weight: 15
+        enabled: true
+      hp_partenaires:
+        weight: 9
+        enabled: true
+      hp_qui_somme_nous:
+        weight: 8
+        enabled: true
+      hp_solution:
+        weight: 14
+        enabled: false
+      in_progress_product:
+        weight: 54
+        enabled: false
+      logo_with_links:
+        weight: 55
+        enabled: false
+      logo_with_links_parent:
+        weight: 56
+        enabled: true
+      nos_partenaires:
+        weight: 57
+        enabled: false
+      nos_partenaires_block_top:
+        weight: 58
+        enabled: false
+      nos_produits:
+        weight: 59
+        enabled: false
+      nos_sites:
+        weight: 60
+        enabled: false
+      nos_sponsors:
+        weight: 11
+        enabled: true
+      nos_valeurs:
+        weight: 62
+        enabled: false
+      notre_mission:
+        weight: 63
+        enabled: false
+      notre_offre:
+        weight: 18
+        enabled: true
+      notre_strategie:
+        weight: 65
+        enabled: false
+      partenaire:
+        weight: 66
+        enabled: false
+      product_category:
+        weight: 24
+        enabled: false
+      product_category_text:
+        weight: 68
+        enabled: false
+      produit:
+        weight: 19
+        enabled: false
+      produit_agricole:
+        weight: 70
+        enabled: false
+      produit_nos_sponsors:
+        weight: 71
+        enabled: false
+      produit_similaire:
+        weight: 72
+        enabled: false
+      site:
+        weight: 73
+        enabled: false
+      strategie:
+        weight: 74
+        enabled: false
+      text_content:
+        weight: 12
+        enabled: false
+      valeur:
+        weight: 76
+        enabled: false
+field_type: entity_reference_revisions

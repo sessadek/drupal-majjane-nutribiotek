@@ -1,0 +1,36 @@
+uuid: 13c3ca17-b9f2-498e-85ba-b46d2e175b34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.social_media_image.field_media_image_2
+    - image.style.social_media_image_24x24
+    - media.type.social_media_image
+  module:
+    - svg_image
+id: media.social_media_image.default
+targetEntityType: media
+bundle: social_media_image
+mode: default
+content:
+  field_media_image_2:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: social_media_image_24x24
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

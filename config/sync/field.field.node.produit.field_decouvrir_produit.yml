@@ -1,0 +1,24 @@
+uuid: 7a4f0e25-175b-4689-82cc-1eac512a3523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decouvrir_produit
+    - filter.format.full_html
+    - node.type.produit
+  module:
+    - text
+id: node.produit.field_decouvrir_produit
+field_name: field_decouvrir_produit
+entity_type: node
+bundle: produit
+label: 'Decouvrir Produit'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

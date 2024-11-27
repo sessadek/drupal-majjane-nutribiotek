@@ -1,0 +1,19 @@
+uuid: c4b0dfca-9397-40ed-be50-7461cecea8d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.actualite
+id: node.actualite.field_title
+field_name: field_title
+entity_type: node
+bundle: actualite
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 75ad672a-4392-4764-972b-e1b0bc5a8f9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: nutribiotek_messages
+theme: nutribiotek
+region: header_right
+weight: -11
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

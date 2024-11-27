@@ -1,0 +1,18 @@
+uuid: 7ae0987a-2739-4d09-918f-7dff249b5027
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.a_propos_mot_directeur
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.a_propos_mot_directeur
+target_entity_type_id: paragraph
+target_bundle: a_propos_mot_directeur
+default_langcode: site_default
+language_alterable: false

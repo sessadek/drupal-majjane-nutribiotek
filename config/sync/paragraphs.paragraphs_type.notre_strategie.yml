@@ -1,0 +1,10 @@
+uuid: 9a626912-9035-4284-8cba-c49ebd5eaa4e
+langcode: en
+status: true
+dependencies: {  }
+id: notre_strategie
+label: 'Notre strategie'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

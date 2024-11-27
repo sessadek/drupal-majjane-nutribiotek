@@ -1,0 +1,62 @@
+uuid: a5809e56-f2ab-4e2d-b491-8a12dfc5320f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hp_offre_emploi.field_body
+    - field.field.paragraph.hp_offre_emploi.field_image
+    - field.field.paragraph.hp_offre_emploi.field_libelle
+    - field.field.paragraph.hp_offre_emploi.field_link
+    - field.field.paragraph.hp_offre_emploi.field_title
+    - paragraphs.paragraphs_type.hp_offre_emploi
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.hp_offre_emploi.default
+targetEntityType: paragraph
+bundle: hp_offre_emploi
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_libelle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

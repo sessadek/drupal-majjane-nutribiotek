@@ -1,0 +1,22 @@
+uuid: 51220602-5226-4002-a6b3-484c92d3b815
+langcode: en
+status: false
+dependencies:
+  theme:
+    - nutribiotek
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: nutribiotek_secondary_local_tasks
+theme: nutribiotek
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

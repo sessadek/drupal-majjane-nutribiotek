@@ -1,0 +1,18 @@
+uuid: cb1b6daa-fe75-41a0-a8b0-2d21e5b7d9b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.terms-of-service
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.terms-of-service
+target_entity_type_id: menu_link_content
+target_bundle: terms-of-service
+default_langcode: site_default
+language_alterable: false

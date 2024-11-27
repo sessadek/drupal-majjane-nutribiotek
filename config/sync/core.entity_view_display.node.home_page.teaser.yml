@@ -1,0 +1,23 @@
+uuid: f588333e-1cfd-4aaf-84dc-b64202c262b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_page.field_content
+    - node.type.home_page
+  module:
+    - user
+id: node.home_page.teaser
+targetEntityType: node
+bundle: home_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 68c35c36-64fb-45c6-9c29-45fee3ac2e76
+langcode: en
+status: true
+dependencies: {  }
+id: hp_nos_solutions
+label: 'HP - Nos Solutions'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

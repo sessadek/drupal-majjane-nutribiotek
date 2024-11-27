@@ -1,0 +1,24 @@
+uuid: 64b40227-543d-446f-a540-022aa276d295
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.hp_nos_solutions
+  module:
+    - text
+id: paragraph.hp_nos_solutions.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: hp_nos_solutions
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

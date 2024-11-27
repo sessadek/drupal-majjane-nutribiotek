@@ -1,0 +1,55 @@
+uuid: 9f5ab150-6096-4961-b2cb-7794330c94cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produit_agricole.field_body
+    - field.field.paragraph.produit_agricole.field_image
+    - field.field.paragraph.produit_agricole.field_link
+    - field.field.paragraph.produit_agricole.field_title
+    - paragraphs.paragraphs_type.produit_agricole
+  module:
+    - link
+    - text
+id: paragraph.produit_agricole.default
+targetEntityType: paragraph
+bundle: produit_agricole
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

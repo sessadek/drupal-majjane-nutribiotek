@@ -1,0 +1,18 @@
+uuid: 29c40298-3352-44d0-908d-fb6be09d1fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.produit
+id: node.produit.changed
+field_name: changed
+entity_type: node
+bundle: produit
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

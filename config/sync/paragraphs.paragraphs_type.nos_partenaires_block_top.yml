@@ -1,0 +1,10 @@
+uuid: e7e75e93-62f6-4d9c-8170-ee1770b91737
+langcode: en
+status: true
+dependencies: {  }
+id: nos_partenaires_block_top
+label: 'nos partenaires block top'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

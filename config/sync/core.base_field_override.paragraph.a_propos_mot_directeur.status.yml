@@ -1,0 +1,22 @@
+uuid: 6c738799-d8d3-40cc-9c5d-b342a90d8939
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.a_propos_mot_directeur
+id: paragraph.a_propos_mot_directeur.status
+field_name: status
+entity_type: paragraph
+bundle: a_propos_mot_directeur
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

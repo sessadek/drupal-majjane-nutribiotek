@@ -1,0 +1,28 @@
+uuid: d9afb7a9-e232-461e-9979-c078d9f1005f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produit_similaire
+    - node.type.produit
+id: node.produit.field_produit_similaire
+field_name: field_produit_similaire
+entity_type: node
+bundle: produit
+label: 'Produit Similaire'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      produit: produit
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

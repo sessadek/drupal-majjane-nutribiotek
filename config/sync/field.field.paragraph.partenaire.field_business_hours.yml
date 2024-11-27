@@ -1,0 +1,19 @@
+uuid: bd3970ac-a485-471f-9999-b5969ac6edb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_business_hours
+    - paragraphs.paragraphs_type.partenaire
+id: paragraph.partenaire.field_business_hours
+field_name: field_business_hours
+entity_type: paragraph
+bundle: partenaire
+label: 'Heure de travail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

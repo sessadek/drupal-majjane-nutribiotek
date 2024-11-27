@@ -1,0 +1,19 @@
+uuid: 9ed88a52-0574-4c14-ad20-b7687a7abeee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_libelle
+    - paragraphs.paragraphs_type.a_propos_mot_directeur
+id: paragraph.a_propos_mot_directeur.field_libelle
+field_name: field_libelle
+entity_type: paragraph
+bundle: a_propos_mot_directeur
+label: Libelle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 399cb303-5661-4b6c-bdb5-891881f13271
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produit_agricole
+id: paragraph.produit_agricole.status
+field_name: status
+entity_type: paragraph
+bundle: produit_agricole
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

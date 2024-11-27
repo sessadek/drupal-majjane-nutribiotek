@@ -1,0 +1,20 @@
+uuid: c89421b5-ac6a-413e-9a71-768538729d46
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_partenaires
+field_name: field_partenaires
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

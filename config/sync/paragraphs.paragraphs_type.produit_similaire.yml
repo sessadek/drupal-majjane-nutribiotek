@@ -1,0 +1,10 @@
+uuid: 4778b8cf-1087-4822-837e-6433de306fd9
+langcode: en
+status: true
+dependencies: {  }
+id: produit_similaire
+label: 'Produit Similaire'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

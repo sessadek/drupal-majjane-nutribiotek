@@ -1,0 +1,25 @@
+uuid: e261a03d-2401-44a4-8fe2-3c2653cef48b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-links
+  module:
+    - system
+  theme:
+    - nutribiotek
+id: nutribiotek_sociallinks
+theme: nutribiotek
+region: footer_bottom
+weight: -11
+provider: null
+plugin: 'system_menu_block:social-links'
+settings:
+  id: 'system_menu_block:social-links'
+  label: 'Social Links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

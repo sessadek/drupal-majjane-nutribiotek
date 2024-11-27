@@ -1,0 +1,18 @@
+uuid: 87bde5b3-7597-433a-91f9-69a8056052a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hp_solution
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.hp_solution
+target_entity_type_id: paragraph
+target_bundle: hp_solution
+default_langcode: site_default
+language_alterable: false

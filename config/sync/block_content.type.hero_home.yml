@@ -1,0 +1,8 @@
+uuid: ef0b3713-5d4d-42e8-be6f-afb4d0ac7136
+langcode: en
+status: true
+dependencies: {  }
+id: hero_home
+label: 'Hero Home'
+revision: false
+description: 'Dimensions recommandées : 1440x798.'

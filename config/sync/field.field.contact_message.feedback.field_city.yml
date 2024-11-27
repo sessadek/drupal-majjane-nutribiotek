@@ -1,0 +1,19 @@
+uuid: e6395dbf-f26c-4f0f-b7c8-91bf7eda241d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_city
+id: contact_message.feedback.field_city
+field_name: field_city
+entity_type: contact_message
+bundle: feedback
+label: City
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

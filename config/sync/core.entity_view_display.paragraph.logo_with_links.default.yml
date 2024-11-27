@@ -1,0 +1,37 @@
+uuid: 4a4e59f8-c02c-43c1-9bf0-0a31ab6e8be1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_with_links.field_link_logo
+    - field.field.paragraph.logo_with_links.field_logo
+    - paragraphs.paragraphs_type.logo_with_links
+  module:
+    - link
+id: paragraph.logo_with_links.default
+targetEntityType: paragraph
+bundle: logo_with_links
+mode: default
+content:
+  field_link_logo:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

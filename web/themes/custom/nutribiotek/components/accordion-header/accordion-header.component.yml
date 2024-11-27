@@ -1,0 +1,10 @@
+name: AccordionHeader
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: Title
+      description: The title accordion

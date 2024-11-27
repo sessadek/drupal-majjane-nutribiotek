@@ -1,0 +1,20 @@
+uuid: ae33accb-d14c-48bb-82fc-fc0b857bbc3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - nutribiotek
+id: nutribiotek_languageswitcher
+theme: nutribiotek
+region: footer_bottom_right
+weight: -13
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

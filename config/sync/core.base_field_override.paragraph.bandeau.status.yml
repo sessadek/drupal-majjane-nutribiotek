@@ -1,0 +1,22 @@
+uuid: 105a6330-bc2e-46dd-821b-fa08e6c952f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bandeau
+id: paragraph.bandeau.status
+field_name: status
+entity_type: paragraph
+bundle: bandeau
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

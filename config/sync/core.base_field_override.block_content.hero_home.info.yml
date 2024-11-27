@@ -1,0 +1,18 @@
+uuid: 07de9c83-faa8-46e7-be9e-f54a9c885276
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_home
+id: block_content.hero_home.info
+field_name: info
+entity_type: block_content
+bundle: hero_home
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

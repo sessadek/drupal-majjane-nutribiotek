@@ -1,0 +1,33 @@
+uuid: 527251d0-a337-44bb-b13b-a42e5aa962b2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:actualites_block:eb785fb7-7f66-4e8c-9ae6-5ded1ef7e2b0'
+  module:
+    - block_content
+    - node
+  theme:
+    - nutribiotek
+id: nutribiotek_actualites
+theme: nutribiotek
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:eb785fb7-7f66-4e8c-9ae6-5ded1ef7e2b0'
+settings:
+  id: 'block_content:eb785fb7-7f66-4e8c-9ae6-5ded1ef7e2b0'
+  label: Actualites
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      actualite: actualite

@@ -1,0 +1,51 @@
+uuid: 47492051-b905-429d-acc5-877eb8a40dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hp_nos_solutions.field_body
+    - field.field.paragraph.hp_nos_solutions.field_libelle
+    - field.field.paragraph.hp_nos_solutions.field_solution
+    - field.field.paragraph.hp_nos_solutions.field_title
+    - paragraphs.paragraphs_type.hp_nos_solutions
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.hp_nos_solutions.default
+targetEntityType: paragraph
+bundle: hp_nos_solutions
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_solution:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

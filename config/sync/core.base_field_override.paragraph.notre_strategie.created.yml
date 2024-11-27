@@ -1,0 +1,18 @@
+uuid: 43cf0b51-240c-414a-af65-8907badb71a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.notre_strategie
+id: paragraph.notre_strategie.created
+field_name: created
+entity_type: paragraph
+bundle: notre_strategie
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

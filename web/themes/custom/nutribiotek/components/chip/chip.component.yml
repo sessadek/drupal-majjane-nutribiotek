@@ -1,0 +1,19 @@
+name: Chip
+props:
+  type: object
+  required:
+    - color
+  properties:
+    dismissable:
+      type: boolean
+      title: Dismissbale
+      description: If true users can dismiss the chip by clicking on it.
+    color:
+      type: string
+      title: Color
+      description: "Background color to use for the chip, one of 'primary' or 'secondary'."
+      enum: ['primary', 'secondary']
+slots:
+  chip_content:
+    title: Content
+    description: Content of the chip

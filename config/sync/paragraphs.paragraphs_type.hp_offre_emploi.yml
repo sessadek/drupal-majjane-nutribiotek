@@ -1,0 +1,10 @@
+uuid: 8b8fdc69-20c7-4b26-8e77-8099fee82133
+langcode: en
+status: true
+dependencies: {  }
+id: hp_offre_emploi
+label: 'HP - Offre Emploi'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

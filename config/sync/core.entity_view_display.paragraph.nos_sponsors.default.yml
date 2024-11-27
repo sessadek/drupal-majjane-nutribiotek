@@ -1,0 +1,30 @@
+uuid: d5d15854-a6bd-4a87-90c9-710d219b2b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nos_sponsors.field_image_upload
+    - paragraphs.paragraphs_type.nos_sponsors
+  module:
+    - svg_image
+id: paragraph.nos_sponsors.default
+targetEntityType: paragraph
+bundle: nos_sponsors
+mode: default
+content:
+  field_image_upload:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

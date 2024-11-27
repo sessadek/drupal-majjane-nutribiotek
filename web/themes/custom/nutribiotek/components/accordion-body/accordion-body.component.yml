@@ -1,0 +1,10 @@
+name: AccordionBody
+props:
+  type: object
+  required:
+    - body
+  properties:
+    body:
+      type: string
+      title: Description
+      description: the content accordion

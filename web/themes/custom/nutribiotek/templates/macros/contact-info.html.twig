@@ -1,0 +1,26 @@
+{# {% import '@nutribiotek/components/link-btn.twig' as LinkBtn %}
+
+{% set arrow_img = '/' ~ active_theme_path() ~ '/front/assets/images/arrow.png' %} #}
+
+{% macro ContactInfo(libelle, title, body, link, email) %}
+  <div class="px-5 py-5 d-flex flex-column justify-content-center contact_us_cnt">
+    {% if (email) %}
+      <div class="contact_tag mb-4">
+        <h3 class="title">{{ 'INFORMATIONS DE CONTACT'|t }}</h3>
+        <a href="mailto:{{ email.0['#context'].value }}" class="contact_link">{{ email.0['#context'].value }}</a>
+      </div>
+    {% endif %}
+    {% if (libelle) %}
+      <h2 class="section_tag_white">{{ libelle}}</h2>
+    {% endif %}
+    {% if (title) %}
+      <h3 class="section_title white_cr">{{ title.0['#context']['value']|raw  }}</h3>
+    {% endif %}
+    {% if (body) %}
+      <div class="p_standard white_cr max_p">{{ body }}</div>
+    {% endif %}
+    {% if (link) %}
+      {{ include('@nutribiotek/components/link-btn.html.twig', {'link': link}) }}
+    {% endif %}
+  </div>
+{% endmacro ContactInfo %}

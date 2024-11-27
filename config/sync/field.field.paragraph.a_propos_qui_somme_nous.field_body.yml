@@ -1,0 +1,24 @@
+uuid: ee7f8ded-a328-41df-8885-d78574fae6f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.a_propos_qui_somme_nous
+  module:
+    - text
+id: paragraph.a_propos_qui_somme_nous.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: a_propos_qui_somme_nous
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

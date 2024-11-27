@@ -1,0 +1,18 @@
+uuid: 743be709-2daa-4255-8fbf-79c7da9647b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Actualite
+type: actualite
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

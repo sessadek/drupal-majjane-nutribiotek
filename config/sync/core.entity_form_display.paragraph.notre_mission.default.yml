@@ -1,0 +1,43 @@
+uuid: 85c17a64-9289-4b93-a43a-f3311b65ee31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.notre_mission.field_body
+    - field.field.paragraph.notre_mission.field_libelle
+    - field.field.paragraph.notre_mission.field_title
+    - paragraphs.paragraphs_type.notre_mission
+  module:
+    - text
+id: paragraph.notre_mission.default
+targetEntityType: paragraph
+bundle: notre_mission
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_libelle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

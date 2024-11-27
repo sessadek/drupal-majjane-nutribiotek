@@ -1,0 +1,18 @@
+uuid: c1dddd06-9c89-43dc-aac7-303c39b69c92
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.notre_offre
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.notre_offre
+target_entity_type_id: paragraph
+target_bundle: notre_offre
+default_langcode: site_default
+language_alterable: false

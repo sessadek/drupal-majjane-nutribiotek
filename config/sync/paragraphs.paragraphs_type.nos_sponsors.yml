@@ -1,0 +1,10 @@
+uuid: 4b58568a-e7c3-4207-b335-9fcd4ec6449a
+langcode: en
+status: true
+dependencies: {  }
+id: nos_sponsors
+label: 'Nos Sponsors'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

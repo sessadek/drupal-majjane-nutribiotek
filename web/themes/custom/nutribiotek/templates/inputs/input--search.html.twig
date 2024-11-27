@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+<div class="search_box search_box_navigation me-2">
+  <img src="{{ theme_url ~ '/front/assets/images/search_icon.svg' }}" alt="Search icon">
+  <input{{ attributes.addClass('search_input_nav') }} placeholder="Recherche..." aria-label="Search" />
+</div>

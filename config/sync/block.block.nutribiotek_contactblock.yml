@@ -1,0 +1,29 @@
+uuid: 0f13c844-d933-400a-ae90-b831bd08f107
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - system
+  theme:
+    - nutribiotek
+id: nutribiotek_contactblock
+theme: nutribiotek
+region: content
+weight: -9
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  label_display: '0'
+  provider: contact_block
+  contact_form: feedback
+  form_display: default
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

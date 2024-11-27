@@ -1,0 +1,20 @@
+uuid: b347d0e3-ca99-4e68-b1ae-cb09c4129fa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.social_media_image
+id: media.social_media_image.name
+field_name: name
+entity_type: media
+bundle: social_media_image
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

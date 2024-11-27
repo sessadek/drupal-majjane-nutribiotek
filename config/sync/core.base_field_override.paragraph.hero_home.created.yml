@@ -1,0 +1,18 @@
+uuid: 34256c8b-136b-4db6-a9e5-05c6c3289df8
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hero_home
+id: paragraph.hero_home.created
+field_name: created
+entity_type: paragraph
+bundle: hero_home
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,20 @@
+uuid: 3ce10a95-2a71-4511-89ad-ddfb0a780aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.social_media_image
+  module:
+    - path
+id: media.social_media_image.path
+field_name: path
+entity_type: media
+bundle: social_media_image
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

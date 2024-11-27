@@ -1,0 +1,24 @@
+uuid: da9610b1-837d-411e-b1b7-3828fb2d109c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nos_sites.field_site
+    - paragraphs.paragraphs_type.nos_sites
+  module:
+    - entity_reference_revisions
+id: paragraph.nos_sites.default
+targetEntityType: paragraph
+bundle: nos_sites
+mode: default
+content:
+  field_site:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

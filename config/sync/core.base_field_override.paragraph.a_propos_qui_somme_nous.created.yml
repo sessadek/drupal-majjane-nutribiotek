@@ -1,0 +1,18 @@
+uuid: 357a29f2-433d-4836-a869-72c87c03859a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.a_propos_qui_somme_nous
+id: paragraph.a_propos_qui_somme_nous.created
+field_name: created
+entity_type: paragraph
+bundle: a_propos_qui_somme_nous
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

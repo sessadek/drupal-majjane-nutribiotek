@@ -1,0 +1,25 @@
+uuid: 30931fdd-dd4a-4087-a293-7b85bd5c67e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nos_sites.field_bandeau
+    - field.field.node.nos_sites.field_content
+    - node.type.nos_sites
+  module:
+    - user
+id: node.nos_sites.teaser
+targetEntityType: node
+bundle: nos_sites
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_bandeau: true
+  field_content: true
+  langcode: true

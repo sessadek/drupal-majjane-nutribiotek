@@ -1,0 +1,10 @@
+uuid: ea155c77-1d85-4301-81c6-67c47fb0f509
+langcode: en
+status: true
+dependencies: {  }
+id: product_category_text
+label: 'Product Category Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

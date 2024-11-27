@@ -1,0 +1,24 @@
+uuid: 14695ad9-abbf-4587-bb84-ccb253abc91a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.produit
+  module:
+    - text
+id: paragraph.produit.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: produit
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

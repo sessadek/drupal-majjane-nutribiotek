@@ -1,0 +1,20 @@
+uuid: f73d2a1e-cfc4-4fd2-aa70-f241e6a1f2ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.menu_image_item
+  module:
+    - path
+id: media.menu_image_item.path
+field_name: path
+entity_type: media
+bundle: menu_image_item
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

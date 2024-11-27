@@ -1,0 +1,18 @@
+uuid: 44866a51-4199-4ce3-967f-9a400ca07405
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.social_media_image
+id: media.social_media_image.changed
+field_name: changed
+entity_type: media
+bundle: social_media_image
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

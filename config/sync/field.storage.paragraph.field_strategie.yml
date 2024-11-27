@@ -1,0 +1,20 @@
+uuid: 0b5b3d76-d8c9-4762-a3cc-e7b1ddae298f
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_strategie
+field_name: field_strategie
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

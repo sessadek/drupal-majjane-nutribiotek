@@ -1,0 +1,62 @@
+uuid: 24aaaeee-1eb4-42fa-a7d4-7b5322f6b343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hp_qui_somme_nous.field_body
+    - field.field.paragraph.hp_qui_somme_nous.field_image
+    - field.field.paragraph.hp_qui_somme_nous.field_libelle
+    - field.field.paragraph.hp_qui_somme_nous.field_link
+    - field.field.paragraph.hp_qui_somme_nous.field_title
+    - paragraphs.paragraphs_type.hp_qui_somme_nous
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.hp_qui_somme_nous.default
+targetEntityType: paragraph
+bundle: hp_qui_somme_nous
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_libelle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

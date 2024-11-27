@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: fr
+uuid: 346a2911-848b-45bd-9f70-38b5e991b887
+name: Nutribiotek
+mail: contact@majjane.ma
+slogan: 'Nutribiotek : l’avenir de l’agriculture durable.'
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: fr
+mail_notification: null

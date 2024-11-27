@@ -1,0 +1,88 @@
+uuid: 9828da8f-9166-4617-9b3d-73be70dde48c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.product_category.field_body
+    - field.field.taxonomy_term.product_category.field_image
+    - field.field.taxonomy_term.product_category.field_link
+    - field.field.taxonomy_term.product_category.field_title
+    - taxonomy.vocabulary.product_category
+  module:
+    - link
+    - media_library
+    - path
+    - text
+id: taxonomy_term.product_category.default
+targetEntityType: taxonomy_term
+bundle: product_category
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 102
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 104
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 103
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 101
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

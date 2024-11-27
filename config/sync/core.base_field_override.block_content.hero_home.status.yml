@@ -1,0 +1,22 @@
+uuid: 1bac6206-1930-4ea7-a09b-82fa4b09dae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_home
+id: block_content.hero_home.status
+field_name: status
+entity_type: block_content
+bundle: hero_home
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

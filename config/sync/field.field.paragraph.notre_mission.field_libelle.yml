@@ -1,0 +1,19 @@
+uuid: 4e45bb9e-24d7-42ee-90ce-fe0b9c8cd15c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_libelle
+    - paragraphs.paragraphs_type.notre_mission
+id: paragraph.notre_mission.field_libelle
+field_name: field_libelle
+entity_type: paragraph
+bundle: notre_mission
+label: Libelle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

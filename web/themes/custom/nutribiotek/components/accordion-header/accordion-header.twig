@@ -1,0 +1,14 @@
+{# accordion-header.twig #}
+{%
+  set classes = [
+    'info_title'
+  ]
+%}
+{% if title %}
+  <div{{ attributes.addClass(classes) }}>
+    <h3>{{ title }}</h3>
+    <button class="close_button">
+      <img src="{{ '/' ~ active_theme_path() ~ '/front/assets/images/close_icon_.svg' }}">
+    </button>
+  </div>
+{% endif %}

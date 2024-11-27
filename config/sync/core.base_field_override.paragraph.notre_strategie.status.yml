@@ -1,0 +1,22 @@
+uuid: 8fa5cff3-3802-4c9b-97e2-9f9c611e5f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.notre_strategie
+id: paragraph.notre_strategie.status
+field_name: status
+entity_type: paragraph
+bundle: notre_strategie
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

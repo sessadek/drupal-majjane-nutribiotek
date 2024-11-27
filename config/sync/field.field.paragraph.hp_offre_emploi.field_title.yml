@@ -1,0 +1,19 @@
+uuid: cfe2103f-7378-438d-bca7-7b3812c61c0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.hp_offre_emploi
+id: paragraph.hp_offre_emploi.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: hp_offre_emploi
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 9d0822dc-0deb-4f88-9455-62844db9c2e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produit_agricole
+id: paragraph.produit_agricole.created
+field_name: created
+entity_type: paragraph
+bundle: produit_agricole
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

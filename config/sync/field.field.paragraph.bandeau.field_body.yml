@@ -1,0 +1,24 @@
+uuid: 0b3c7bb3-e85a-4bc3-8bd7-e4d7651f3b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.bandeau
+  module:
+    - text
+id: paragraph.bandeau.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: bandeau
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

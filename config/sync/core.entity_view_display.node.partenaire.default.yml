@@ -1,0 +1,29 @@
+uuid: 63250e93-e232-441c-b7c7-d527f26a9c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.partenaire.body
+    - node.type.partenaire
+  module:
+    - text
+    - user
+id: node.partenaire.default
+targetEntityType: node
+bundle: partenaire
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

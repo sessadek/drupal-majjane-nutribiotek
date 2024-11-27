@@ -1,0 +1,105 @@
+uuid: 33cb083d-daf8-4d70-9d23-050adaca0ea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partenaire.field_address
+    - field.field.paragraph.partenaire.field_body
+    - field.field.paragraph.partenaire.field_business_hours
+    - field.field.paragraph.partenaire.field_image
+    - field.field.paragraph.partenaire.field_link
+    - field.field.paragraph.partenaire.field_map
+    - field.field.paragraph.partenaire.field_phone
+    - field.field.paragraph.partenaire.field_title
+    - paragraphs.paragraphs_type.partenaire
+  module:
+    - link
+    - simple_gmap
+    - telephone
+    - text
+id: paragraph.partenaire.default
+targetEntityType: paragraph
+bundle: partenaire
+mode: default
+content:
+  field_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_business_hours:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_map:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: '200'
+      iframe_width: '200'
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_phone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

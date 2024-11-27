@@ -1,0 +1,25 @@
+{% macro ImageLeftTextRight(image, libelle, title, body) %}
+  <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-12 d-flex align-items-center">
+                {% if image %}
+                    <div class="image_Directeur">
+                        {{ image }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="my-lg-0 my-4">
+                    {% if libelle %}
+                        <h2 class="section_tag_main mb-4">{{ libelle }}</h2>
+                    {% endif %}
+                    {% if title %}
+                        <h3 class="section_title mb-4">{{ title.0['#context']['value']|raw  }}</h3>
+                    {% endif %}
+                    {% if body %}
+                        <div>{{ body }}</div>
+                    {% endif %}
+                </div>
+        </div>
+  </div>
+{% endmacro %}

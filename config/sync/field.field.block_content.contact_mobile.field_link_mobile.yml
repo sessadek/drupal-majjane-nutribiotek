@@ -1,0 +1,23 @@
+uuid: 89a5e85f-a6ac-4430-a925-3d7ee672b6e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_mobile
+    - field.storage.block_content.field_link_mobile
+  module:
+    - link
+id: block_content.contact_mobile.field_link_mobile
+field_name: field_link_mobile
+entity_type: block_content
+bundle: contact_mobile
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

@@ -1,0 +1,10 @@
+uuid: 8479ea2c-d997-4abd-b380-f1050226209e
+langcode: fr
+status: true
+dependencies: {  }
+id: logo_with_links_parent
+label: 'Logo with links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

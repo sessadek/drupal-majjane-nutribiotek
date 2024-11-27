@@ -1,0 +1,18 @@
+uuid: 590a9501-f705-40bb-907c-187beba573b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produit_agricole
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.produit_agricole
+target_entity_type_id: paragraph
+target_bundle: produit_agricole
+default_langcode: site_default
+language_alterable: false

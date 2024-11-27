@@ -1,0 +1,8 @@
+uuid: 493a247c-1aca-478b-8fac-5691ec16e63b
+langcode: en
+status: true
+dependencies: {  }
+id: actualites_block
+label: 'Actualites Block'
+revision: false
+description: null

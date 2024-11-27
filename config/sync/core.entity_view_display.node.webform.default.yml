@@ -1,0 +1,46 @@
+uuid: 7250284a-425d-41b6-8c11-f7f26d2e6626
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webform.body
+    - field.field.node.webform.field_bandeau
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - entity_reference_revisions
+    - user
+    - webform
+_core:
+  default_config_hash: 3r1i0UMUbeNHhvmiqHDYznoS4G9XR1jq6lQ49r80lDE
+id: node.webform.default
+targetEntityType: node
+bundle: webform
+mode: default
+content:
+  field_bandeau:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  langcode: true

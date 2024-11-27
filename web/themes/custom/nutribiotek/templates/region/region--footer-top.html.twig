@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% if content %}
+  <div{{ attributes.addClass('top_footer_parts') }}>
+    {# <div class="left_top_footer">
+      <img src="{{ '/' ~ active_theme_path() ~ '/front/assets/images/footer_logo.png' }}" class="w-100" alt="">
+    </div> #}
+    {{ content }}
+  </div>
+{% endif %}

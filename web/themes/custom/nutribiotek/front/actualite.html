@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <header class="d-flex align-items-lg-center align-items-md-center align-items-start justify-content-between container-fluid mt-3 main_header" role="banner">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="/">
+                <img src="assets/images/logo.svg" class="site_logo" alt="nitrubiotique logo" />
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav aria-label="Main navigation" class="main_navigation">
+            <ul class="nav-list">
+                <li><a href="page2.html" class="parent_link">À propos</a></li>
+                <li>
+                    <a href="page3.html" class="parent_link">Nos produits</a>
+                    <div class="link_childs_list">
+                        <div class="link_list">
+                            <ul>
+                                <li class="child_item" data-img="assets/images/product_img.svg" ><a class="child_links" href="page3.html">Biostimulants</a></li>
+                                <li class="child_item" data-img="assets/images/hands_shake.png"><a class="child_links" href="page4.html" >Biofertilisants</a></li>
+                                <li class="child_item" data-img="assets/images/product_img.svg"><a class="child_links" href="page4.html" >Biocontrôle</a></li>
+                                <li class="child_item" data-img="assets/images/product_img.svg"><a class="child_links" href="page3.html" >Micronutriments</a></li>
+                            </ul>
+                        </div>
+                        <div class="link_img_cnt">
+                            <img id="child_img" src="" alt="Product Image">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="nos_sites.html" class="parent_link">Nos sites</a>
+                </li>
+                <li>
+                    <a href="#partners" class="parent_link">Nos partenaires</a>
+                    <div class="link_childs_list">
+                        <div class="link_list w-100">
+                            <ul>
+                                <li class="child_item" ><a class="child_links" href="nos_partenaires.html">Partenariat dans le développement de produits </a></li>
+                                <li class="child_item" ><a class="child_links" href="nos_partenaires2.html" >Biofertilisants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact" class="parent_link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Language, Search, and CTA Section -->
+        <div class="header-controls d-flex align-items-center">
+            <!-- Language Selector -->
+            <div class="custom-dropdown me-2">
+                <button class="custom-dropdown-toggle">Fr <img src="assets/images/dropdown.svg" alt="dropdown icon"></button>
+                <ul class="custom-dropdown-menu">
+                    <li class="custom-dropdown-item">Ar</li>
+                    <li class="custom-dropdown-item">En</li>
+                    <li class="custom-dropdown-item">Fr</li>
+                </ul>
+            </div>
+
+            <!-- Search Input -->
+            <div class="search_box me-2">
+                <img src="assets/images/search_icon.svg" alt="">
+                <input
+                    type="text"
+                    class=""
+                    placeholder="Recherche..."
+                    aria-label="Search">
+            </div>
+
+            <!-- CTA Button -->
+            <button type="button" class="colapse_btn menu_button"><img src="assets/images/collapse_btn.svg" alt="collpse boutton"></button>
+        </div>
+    </header>
+    <div class="main_container">
+        <section class="breadcrumb_container">
+            <div class="container">
+                <h1 class="page_title">À propos de nous</h1>
+                <p class="page_parag mb-5">Pour une agriculture plus propre et productive.</p>
+                <ul class="breadcrumb_links">
+                    <li class="breadcrumb_item"><a href="" class="breadcrumb_link">Home page</a></li>
+                    <li class="breadcrumb_item active_breadcrumb"><a href="" class="breadcrumb_link">À propos</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="container">
+            <div class=" mt-5 mb-5 px-lg-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+                        <input class="search_input" placeholder="Tapez des mots et appuyez sur Entrée " type="text">
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+                        <div class="select_cnt">
+                            <input type="date" class="date_input">
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
+                        <a href="" class="reset_link">Reset</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 row list_items_actulites">
+                <div class="col-lg-4 col-md-6 col-12 mb-4  px-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12  mb-4">
+                    <div class="news_card w-100">
+                        <div>
+                            <span class="news_tag">Rorem 5</span>
+                            <h3 class="news_title mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="vertical-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <g clip-path="url(#clip0_803_1673)">
+                                    <path d="M12.6667 1.83333H12V1.16667C12 0.798667 11.702 0.5 11.3333 0.5C10.9647 0.5 10.6667 0.798667 10.6667 1.16667V1.83333H5.33333V1.16667C5.33333 0.798667 5.03533 0.5 4.66667 0.5C4.298 0.5 4 0.798667 4 1.16667V1.83333H3.33333C1.49533 1.83333 0 3.32867 0 5.16667V13.1667C0 15.0047 1.49533 16.5 3.33333 16.5H12.6667C14.5047 16.5 16 15.0047 16 13.1667V5.16667C16 3.32867 14.5047 1.83333 12.6667 1.83333ZM3.33333 3.16667H12.6667C13.7693 3.16667 14.6667 4.064 14.6667 5.16667V5.83333H1.33333V5.16667C1.33333 4.064 2.23067 3.16667 3.33333 3.16667ZM12.6667 15.1667H3.33333C2.23067 15.1667 1.33333 14.2693 1.33333 13.1667V7.16667H14.6667V13.1667C14.6667 14.2693 13.7693 15.1667 12.6667 15.1667ZM12.6667 9.83333C12.6667 10.2013 12.3687 10.5 12 10.5H4C3.63133 10.5 3.33333 10.2013 3.33333 9.83333C3.33333 9.46533 3.63133 9.16667 4 9.16667H12C12.3687 9.16667 12.6667 9.46533 12.6667 9.83333ZM8 12.5C8 12.868 7.702 13.1667 7.33333 13.1667H4C3.63133 13.1667 3.33333 12.868 3.33333 12.5C3.33333 12.132 3.63133 11.8333 4 11.8333H7.33333C7.702 11.8333 8 12.132 8 12.5Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_803_1673">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                03/07/2024
+                            </div>
+                            <div class="flex-1">
+                                <img class="card_news_img" src="assets/images/actulites_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="navigation_menu">
+            <div class="container-fluid px-5 pt-5 ">
+                <a href="/">
+                    <img src="assets/images/logo.svg" class="site_logo2" alt="nitrubiotique logo" />
+                </a>
+            </div>
+            <div class="container navigation_menu_content px-5">
+                <div class="search_box_navigation d-flex align-items-center ">
+                    <input type="text" class="search_input_nav" placeholder="Tapez des mots et appuyez sur Entrée " aria-label="Search">
+                    <img src="assets/images/search_icon_white.svg" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-8  col-12">
+                        <ul class="nav_links_list">
+                            <li><a href="">À propos de nous</a></li>
+                            <li>
+                                <a href="">Nos produits</a>
+                                <ul>
+                                    <li><a class="" href="#">Biostimulants</a></li>
+                                    <li><a class="" href="#">Biofertilisants</a></li>
+                                    <li><a class="" href="#">Biocontrôle</a></li>
+                                    <li><a class="" href="#">Micronutriments</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Nos sites</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Actualités</a></li>
+                            <li><a href="">Nos offres d'emploi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="contact_content px-4 border_lw">
+                            <h3 class="d-lg-block d-none">Contact Info</h3>
+                            <p class="d-lg-block d-none">Rorem ipsum dolor sit amet, conse ctetur adipiscing elit tiam eu turpis molestie</p>
+                            <p class="d-lg-block d-none"><a href="tel:+212612345678">(+212) 612345678</a></p>
+                            <p class="d-lg-block d-none"><a href="mailto:Contact@nutri-biotek.com">Contact@nutri-biotek.com</a></p>
+                            <div class="d-flex justify-content-lg-between justify-content-center align-items-center gap-lg-0 gap-md-5 gap-3">
+                                <div class="d-flex gap-3">
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                </div>
+                                <div>
+                                    <a href="" class="primary_btn_globalv2"><span>Contact<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn"><img src="assets/images/close_icon.svg" alt="close buttoun"></button>
+        </section>
+    </div>
+    <footer class="container p-4">
+        <div class="footer_cnt">
+            <div class=" top_footer_parts">
+                <div class="left_top_footer">
+                    <img src="assets/images/footer_logo.png" class="w-100" alt="">
+                </div>
+                <div class="right_top_footer">
+                    <div class="content_cnt px-lg-5">
+                        <h3 class="news_letter_title">S’abonner à la newsletter</h3>
+                        <span>Abonnez-vous pour ne rien manquer de nos news.</span>
+                        <div class="nwes_form mt-2">
+                            <input class="news_letter_input" type="email" name="" placeholder="Email" id="">
+                            <button class="primary_btn_global" type="submit"><span>S’abonner<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_div">
+                <div>
+                    <ul class="list_links_footer">
+                        <li><a href="">à propos</a></li>
+                        <li><a href="">Notre présence</a></li>
+                        <li><a href="">Nos produits</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="row align-items-center ">
+                    <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-start gap-3">
+                        <div class="custom-dropdown ">
+                            <button class="custom-dropdown-toggle">Fr <img src="assets/images/dropdown.svg" alt="dropdown icon"></button>
+                            <ul class="custom-dropdown-menu">
+                                <li class="custom-dropdown-item">Ar</li>
+                                <li class="custom-dropdown-item">En</li>
+                                <li class="custom-dropdown-item">Fr</li>
+                            </ul>
+                        </div>
+                        <a class="white_link" href="">Privacy</a>
+                        <a class="white_link" href="">Legal</a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-lg-center justify-content-start">
+                        <P class="white_p">© 2024 Nutribiotek. All Rights Reserved.</P>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-end">
+                        <ul class="links_list gap-3">
+                            <li><a href=""><img src="assets/images/Linkedin.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/images/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/images/x.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

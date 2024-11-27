@@ -1,0 +1,10 @@
+uuid: 74c231d8-e622-47a8-8faa-eabbc34934e4
+langcode: fr
+status: true
+dependencies: {  }
+id: in_progress_product
+label: 'In progress product'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+uuid: bb5aa805-2004-4476-a1f0-6c3779ad7088
+langcode: en
+status: true
+dependencies:
+  module:
+    - simplenews
+  theme:
+    - nutribiotek
+id: nutribiotek_simplenewssubscription
+theme: nutribiotek
+region: footer_top
+weight: -10
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Simplenews subscription'
+  label_display: '0'
+  provider: simplenews
+  newsletters:
+    default: default
+  default_newsletters:
+    default: default
+  message: 'Stay informed - subscribe to our newsletter.'
+  show_manage: false
+  unique_id: fa6f865f-8a39-4a46-b610-b36667f6af7b
+visibility: {  }

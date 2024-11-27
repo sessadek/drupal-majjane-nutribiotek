@@ -1,0 +1,18 @@
+uuid: 99f8e675-1bf9-4b7f-bc13-52a941d09ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.strategie
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.strategie
+target_entity_type_id: paragraph
+target_bundle: strategie
+default_langcode: site_default
+language_alterable: false

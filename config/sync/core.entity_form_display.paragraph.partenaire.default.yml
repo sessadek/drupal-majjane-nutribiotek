@@ -1,0 +1,89 @@
+uuid: be83a8d9-6cb0-45f7-ac6b-10dde0c4a4ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partenaire.field_address
+    - field.field.paragraph.partenaire.field_body
+    - field.field.paragraph.partenaire.field_business_hours
+    - field.field.paragraph.partenaire.field_image
+    - field.field.paragraph.partenaire.field_link
+    - field.field.paragraph.partenaire.field_map
+    - field.field.paragraph.partenaire.field_phone
+    - field.field.paragraph.partenaire.field_title
+    - paragraphs.paragraphs_type.partenaire
+  module:
+    - link
+    - media_library
+    - telephone
+    - text
+id: paragraph.partenaire.default
+targetEntityType: paragraph
+bundle: partenaire
+mode: default
+content:
+  field_address:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_business_hours:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_map:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,73 @@
+uuid: c979a321-3d3c-4cf3-bae4-4a1e96c33be6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produit_nos_sponsors.field_libelle
+    - field.field.paragraph.produit_nos_sponsors.field_logo_sponsor
+    - field.field.paragraph.produit_nos_sponsors.field_partenaires
+    - field.field.paragraph.produit_nos_sponsors.field_title
+    - paragraphs.paragraphs_type.produit_nos_sponsors
+  module:
+    - paragraphs
+id: paragraph.produit_nos_sponsors.default
+targetEntityType: paragraph
+bundle: produit_nos_sponsors
+mode: default
+content:
+  field_libelle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_logo_sponsor:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_partenaires:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_logo_sponsorsimg: true
+  status: true

@@ -1,0 +1,31 @@
+{# web/twig-stories/demo.stories.twig #}
+{% stories demo with {title: 'Demo/Example/Hardcoded'} %}
+
+  {% story simple_html with {
+    name: '1. Simple HTML'
+  } %}
+    <h2>HTML Title Story</h2>
+    <div>
+      <p>HTML Text Story telling to test and documented, yo-hooooooooo ...!</p>
+    </div>
+  {% endstory %}
+
+  {% story args_html with {
+    name: '2. HTML Args',
+    args: {
+      header: 'A dynamic example'|t,
+      items: [{name: 'Foo', value: 'Bar'}]
+    }
+  } %}
+    <h2>{{ header }}</h2>
+    <div>
+      <p>The Arg Story, yo-hooooooooo ...!</p>
+      <ul>
+        {% for item in items %}
+          <li>The item : {{ item.name }} - {{ item.value }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endstory %}
+
+{% endstories %}

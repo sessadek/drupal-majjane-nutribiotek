@@ -1,0 +1,25 @@
+uuid: b959e76d-df33-43ce-aad8-73c955e0f72f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - nutribiotek
+id: nutribiotek_footer
+theme: nutribiotek
+region: footer_bottom_menu
+weight: -11
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

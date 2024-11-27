@@ -1,0 +1,50 @@
+uuid: fb71bf66-6a51-4fa3-a337-ac0aeba124c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hp_partenaires.field_body
+    - field.field.paragraph.hp_partenaires.field_image
+    - field.field.paragraph.hp_partenaires.field_libelle
+    - field.field.paragraph.hp_partenaires.field_title
+    - paragraphs.paragraphs_type.hp_partenaires
+  module:
+    - text
+id: paragraph.hp_partenaires.default
+targetEntityType: paragraph
+bundle: hp_partenaires
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_libelle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

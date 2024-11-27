@@ -1,0 +1,18 @@
+uuid: 3e88b0ae-aa66-40ec-8c98-8a217d989a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.a_propos_mot_directeur
+id: paragraph.a_propos_mot_directeur.created
+field_name: created
+entity_type: paragraph
+bundle: a_propos_mot_directeur
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

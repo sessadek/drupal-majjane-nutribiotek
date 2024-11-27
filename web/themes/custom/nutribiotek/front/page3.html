@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <header class="d-flex align-items-lg-center align-items-md-center align-items-start justify-content-between container-fluid mt-3 main_header" role="banner">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="/">
+                <img src="assets/images/logo.svg" class="site_logo" alt="nitrubiotique logo" />
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav aria-label="Main navigation" class="main_navigation">
+            <ul class="nav-list">
+                <li><a href="page2.html" class="parent_link">À propos</a></li>
+                <li>
+                    <a href="page3.html" class="parent_link">Nos produits</a>
+                    <div class="link_childs_list">
+                        <div class="link_list">
+                            <ul>
+                                <li class="child_item" data-img="assets/images/product_img.svg" ><a class="child_links" href="page3.html">Biostimulants</a></li>
+                                <li class="child_item" data-img="assets/images/hands_shake.png"><a class="child_links" href="page4.html" >Biofertilisants</a></li>
+                                <li class="child_item" data-img="assets/images/product_img.svg"><a class="child_links" href="page4.html" >Biocontrôle</a></li>
+                                <li class="child_item" data-img="assets/images/product_img.svg"><a class="child_links" href="page3.html" >Micronutriments</a></li>
+                            </ul>
+                        </div>
+                        <div class="link_img_cnt">
+                            <img id="child_img" src="" alt="Product Image">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="nos_sites.html" class="parent_link">Nos sites</a>
+                </li>
+                <li>
+                    <a href="#partners" class="parent_link">Nos partenaires</a>
+                    <div class="link_childs_list">
+                        <div class="link_list w-100">
+                            <ul>
+                                <li class="child_item" ><a class="child_links" href="nos_partenaires.html">Partenariat dans le développement de produits </a></li>
+                                <li class="child_item" ><a class="child_links" href="nos_partenaires2.html" >Biofertilisants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact" class="parent_link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Language, Search, and CTA Section -->
+        <div class="header-controls d-flex align-items-center">
+            <!-- Language Selector -->
+            <div class="custom-dropdown me-2">
+                <button class="custom-dropdown-toggle">Fr <img src="assets/images/dropdown.svg" alt="dropdown icon"></button>
+                <ul class="custom-dropdown-menu">
+                    <li class="custom-dropdown-item">Ar</li>
+                    <li class="custom-dropdown-item">En</li>
+                    <li class="custom-dropdown-item">Fr</li>
+                </ul>
+            </div>
+
+            <!-- Search Input -->
+            <div class="search_box me-2">
+                <img src="assets/images/search_icon.svg" alt="">
+                <input
+                    type="text"
+                    class=""
+                    placeholder="Recherche..."
+                    aria-label="Search">
+            </div>
+
+            <!-- CTA Button -->
+            <button type="button" class="colapse_btn menu_button"><img src="assets/images/collapse_btn.svg" alt="collpse boutton"></button>
+        </div>
+    </header>
+    <div class="main_container">
+        <section class="breadcrumb_container">
+            <div class="container">
+                <h1 class="page_title">Biostimulants</h1>
+                <p class="page_parag mb-5">Pour une agriculture plus propre et productive.</p>
+                <ul class="breadcrumb_links">
+                    <li class="breadcrumb_item"><a href="" class="breadcrumb_link">Home page</a></li>
+                    <li class="breadcrumb_item "><a href="" class="breadcrumb_link">Nos produits</a></li>
+                    <li class="breadcrumb_item active_breadcrumb"><a href="" class="breadcrumb_link">Biostimulants</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="product_presentation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 d-flex align-items-center">
+                        <img class="image_Directeur" src="assets/images/bg_img11.png" alt="Directeur Général NUTRIBIOTE">
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12 d-flex align-items-center my-lg-0 my-md-0 my-4">
+                        <div>
+                            <h2 class="section_tag_main mb-4">Nutribiotek</h2>
+                            <h3 class="section_title mb-4">Qu'est ce qu'un <strong>biostimulant?</strong></h3>
+                            <p class="p_standard black">Un biostimulant est un intrant agricole de la famille des fertilisants, ayant pour fonction de stimuler les processus de nutrition des végétaux, indépendamment des éléments nutritifs qu’il contient, dans le seul but d’améliorer une ou plusieurs des caractéristiques des végétaux ou de leur rhizosphère*.</p>
+                            <p class="p_standard ">*La rhizosphère est la zone du sol entourant les racines des plantes, où se déroulent des interactions vitales entre les racines et les micro-organismes du sol."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our_products mb-5">
+            <div class="product_top_div">
+                <h2 class="section_tag_white">Nutribiotek</h2>
+                <h3 class="section_title white_cr">Découvrez nos <strong>produits</strong></h3>
+            </div>
+            <div class="container product_listing">
+                <div class="row  mb-5">
+                    <div class="col-lg-3 col-md-4 col-12 mb-4">
+                        <div class="product_item">
+                            <img class="w-100 product_img_item" src="assets/images/product_img1.png" alt="">
+                            <div class="txt_content">
+                                <h3 class="product_name">Lorem Produit 1</h3>
+                                <p class="product_desc">Forem ipsum dolor sit amet, consectetur adipiscing</p>
+                                <a href="single_product.html" class="card_link">En savoir plus <img src="assets/images/green_arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12  mb-4">
+                        <div class="product_item">
+                            <img class="w-100 product_img_item" src="assets/images/product_img1.png" alt="">
+                            <div class="txt_content">
+                                <h3 class="product_name">Lorem Produit 1</h3>
+                                <p class="product_desc">Forem ipsum dolor sit amet, consectetur adipiscing</p>
+                                <a href="single_product.html" class="card_link">En savoir plus <img src="assets/images/green_arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12  mb-4">
+                        <div class="product_item">
+                            <img class="w-100 product_img_item" src="assets/images/product_img1.png" alt="">
+                            <div class="txt_content">
+                                <h3 class="product_name">Lorem Produit 1</h3>
+                                <p class="product_desc">Forem ipsum dolor sit amet, consectetur adipiscing</p>
+                                <a href="single_product.html" class="card_link">En savoir plus <img src="assets/images/green_arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12  mb-4">
+                        <div class="product_item">
+                            <img class="w-100 product_img_item" src="assets/images/product_img1.png" alt="">
+                            <div class="txt_content">
+                                <h3 class="product_name">Lorem Produit 1</h3>
+                                <p class="product_desc">Forem ipsum dolor sit amet, consectetur adipiscing</p>
+                                <a href="single_product.html" class="card_link">En savoir plus <img src="assets/images/green_arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <button class="product_list_btn">
+                        <img src="assets/images/plus_icon.png" alt="">
+                        <span>Voir plus</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="img_text_section">
+            <div class="p-5 text_content">
+                <h2 class="section_tag_white">Nutribiotek</h2>
+                <h3 class="section_title white_cr"><strong>Pourquoi choisir des biostimulants</strong></h3>
+                <p class="p_standard white_cr max_p">Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.</p>
+            </div>
+            <div>
+                <img src="assets/images/img22.png" class="w-100 h-100" alt="">
+            </div>
+        </section>
+        <section class="our_offers py-5">
+            <div class="container">
+                <div class="content_our_ofr mb-5">
+                    <h2 class="section_tag_white">Nos produits</h2>
+                    <h3 class="section_title white_cr">Notre <strong>offre</strong></h3>
+                    <p class="p_standard white_cr mb-0">Découvrez nos solutions pour optimiser la productivité des cultures et promouvoir la durabilité environnementale.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="product_cnt d-lg-flex d-md-flex d-block  justify-content-between">
+                            <div class="txt_product mx-auto">
+                                <h4 class="product_type">Biostimulants</h4>
+                                <p class="small_description">Des biostimulants pour booster la terre et la plante.</p>
+                                <a href="" class="primary_btn_globalv3"><span>En savoir plus<img src="assets/images/colored_arrow.svg" class="arrow_icon" alt="arrow icon"></span></a>
+                            </div>
+                            <div class="img_container_product mx-auto ">
+                                <div class="custeme_cnt">
+                                    <img class="product_img" src="assets/images/product_img.svg" alt="product">
+                                </div>
+                                <img class="left_hover" src="assets/images/left_hover.svg" alt="product">
+                                <img class="right_hover" src="assets/images/right_hover.svg" alt="">
+                                <img class="top_hover" src="assets/images/top_hover.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="product_cnt d-lg-flex d-md-flex d-block  justify-content-between">
+                            <div class="txt_product mx-auto">
+                                <h4 class="product_type">Biostimulants</h4>
+                                <p class="small_description">Des biostimulants pour booster la terre et la plante.</p>
+                                <a href="" class="primary_btn_globalv3"><span>En savoir plus<img src="assets/images/colored_arrow.svg" class="arrow_icon" alt="arrow icon"></span></a>
+                            </div>
+                            <div class="img_container_product mx-auto ">
+                                <div class="custeme_cnt">
+                                    <img class="product_img" src="assets/images/product_img.svg" alt="product">
+                                </div>
+                                <img class="left_hover" src="assets/images/left_hover.svg" alt="product">
+                                <img class="right_hover" src="assets/images/right_hover.svg" alt="">
+                                <img class="top_hover" src="assets/images/top_hover.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="product_cnt d-lg-flex d-md-flex d-block  justify-content-between">
+                            <div class="txt_product mx-auto">
+                                <h4 class="product_type">Biostimulants</h4>
+                                <p class="small_description">Des biostimulants pour booster la terre et la plante.</p>
+                                <a href="" class="primary_btn_globalv3"><span>En savoir plus<img src="assets/images/colored_arrow.svg" class="arrow_icon" alt="arrow icon"></span></a>
+                            </div>
+                            <div class="img_container_product mx-auto ">
+                                <div class="custeme_cnt">
+                                    <img class="product_img" src="assets/images/product_img.svg" alt="product">
+                                </div>
+                                <img class="left_hover" src="assets/images/left_hover.svg" alt="product">
+                                <img class="right_hover" src="assets/images/right_hover.svg" alt="">
+                                <img class="top_hover" src="assets/images/top_hover.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="product_cnt d-lg-flex d-md-flex d-block  justify-content-between">
+                            <div class="txt_product mx-auto">
+                                <h4 class="product_type">Biostimulants</h4>
+                                <p class="small_description">Des biostimulants pour booster la terre et la plante.</p>
+                                <a href="" class="primary_btn_globalv3"><span>En savoir plus<img src="assets/images/colored_arrow.svg" class="arrow_icon" alt="arrow icon"></span></a>
+                            </div>
+                            <div class="img_container_product mx-auto ">
+                                <div class="custeme_cnt">
+                                    <img class="product_img" src="assets/images/product_img.svg" alt="product">
+                                </div>
+                                <img class="left_hover" src="assets/images/left_hover.svg" alt="product">
+                                <img class="right_hover" src="assets/images/right_hover.svg" alt="">
+                                <img class="top_hover" src="assets/images/top_hover.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact_us_section container py-lg-5 py-md-4 py-1">
+            <div class="px-5 py-5 d-flex flex-column justify-content-center contact_us_cnt">
+                <div class="contact_tag mb-4">
+                    <h3 class="title">INFORMATIONS DE CONTACT</h3>
+                    <a href="" class="contact_link">Contact@nutribiotek.ma</a>
+                </div>
+                <h2 class="section_tag_white">Nutribiotek</h2>
+                <h3 class="section_title white_cr">Espace <strong>collaboration</strong></h3>
+                <p class="p_standard white_cr max_p">Chez NUTRIBIOTEK, nous valorisons les partenariats basés sur l'innovation et la durabilité. Si vous êtes intéressé par une collaboration visant à créer des solutions agricoles efficaces et responsables, nous vous invitons à nous contacter par email. Ensemble, nous pouvons façonner l'avenir de l'agriculture durable grâce à des <strong>approches innovantes et partagées.</strong>
+                </p>
+                <p class="p_standard white_cr max_p"><strong>Contactez-nous dès maintenant et rejoignez notre réseau de partenaires engagés pour un avenir plus vert.</strong></p>
+                <a href="" class="primary_btn_global"><span>Contact<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></a>
+            </div>
+        </section>
+        <section class="navigation_menu">
+            <div class="container-fluid px-5 pt-5 ">
+                <a href="/">
+                    <img src="assets/images/logo.svg" class="site_logo2" alt="nitrubiotique logo" />
+                </a>
+            </div>
+            <div class="container navigation_menu_content px-5">
+                <div class="search_box_navigation d-flex align-items-center ">
+                    <input type="text" class="search_input_nav" placeholder="Tapez des mots et appuyez sur Entrée " aria-label="Search">
+                    <img src="assets/images/search_icon_white.svg" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-8  col-12">
+                        <ul class="nav_links_list">
+                            <li><a href="">À propos de nous</a></li>
+                            <li>
+                                <a href="">Nos produits</a>
+                                <ul>
+                                    <li><a class="" href="#">Biostimulants</a></li>
+                                    <li><a class="" href="#">Biofertilisants</a></li>
+                                    <li><a class="" href="#">Biocontrôle</a></li>
+                                    <li><a class="" href="#">Micronutriments</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Nos sites</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Actualités</a></li>
+                            <li><a href="">Nos offres d'emploi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="contact_content px-4 border_lw">
+                            <h3 class="d-lg-block d-none">Contact Info</h3>
+                            <p class="d-lg-block d-none">Rorem ipsum dolor sit amet, conse ctetur adipiscing elit tiam eu turpis molestie</p>
+                            <p class="d-lg-block d-none"><a href="tel:+212612345678">(+212) 612345678</a></p>
+                            <p class="d-lg-block d-none"><a href="mailto:Contact@nutri-biotek.com">Contact@nutri-biotek.com</a></p>
+                            <div class="d-flex justify-content-lg-between justify-content-center align-items-center gap-lg-0 gap-md-5 gap-3">
+                                <div class="d-flex gap-3">
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                    <a href=""><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
+                                </div>
+                                <div>
+                                    <a href="" class="primary_btn_globalv2"><span>Contact<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn"><img src="assets/images/close_icon.svg" alt="close buttoun"></button>
+        </section>
+    </div>
+    <footer class="container p-4">
+        <div class="footer_cnt">
+            <div class=" top_footer_parts">
+                <div class="left_top_footer">
+                    <img src="assets/images/footer_logo.png" class="w-100" alt="">
+                </div>
+                <div class="right_top_footer">
+                    <div class="content_cnt px-lg-5">
+                        <h3 class="news_letter_title">S’abonner à la newsletter</h3>
+                        <span>Abonnez-vous pour ne rien manquer de nos news.</span>
+                        <div class="nwes_form mt-2">
+                            <input class="news_letter_input" type="email" name="" placeholder="Email" id="">
+                            <button class="primary_btn_global" type="submit"><span>S’abonner<img src="assets/images/arrow.png" class="arrow_icon" alt="arrow icon"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_div">
+                <div>
+                    <ul class="list_links_footer">
+                        <li><a href="">à propos</a></li>
+                        <li><a href="">Notre présence</a></li>
+                        <li><a href="">Nos produits</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="row align-items-center ">
+                    <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-start gap-3">
+                        <div class="custom-dropdown ">
+                            <button class="custom-dropdown-toggle">Fr <img src="assets/images/dropdown.svg" alt="dropdown icon"></button>
+                            <ul class="custom-dropdown-menu">
+                                <li class="custom-dropdown-item">Ar</li>
+                                <li class="custom-dropdown-item">En</li>
+                                <li class="custom-dropdown-item">Fr</li>
+                            </ul>
+                        </div>
+                        <a class="white_link" href="">Privacy</a>
+                        <a class="white_link" href="">Legal</a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-lg-center justify-content-start">
+                        <P class="white_p">© 2024 Nutribiotek. All Rights Reserved.</P>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 d-flex justify-content-end">
+                        <ul class="links_list gap-3">
+                            <li><a href=""><img src="assets/images/Linkedin.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/images/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/images/x.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

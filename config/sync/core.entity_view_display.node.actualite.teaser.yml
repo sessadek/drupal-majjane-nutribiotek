@@ -1,0 +1,37 @@
+uuid: 116a2268-e678-4c11-9938-5b573cdb338a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_libelle
+    - field.field.node.actualite.field_media_image
+    - field.field.node.actualite.field_title
+    - node.type.actualite
+  module:
+    - text
+    - user
+id: node.actualite.teaser
+targetEntityType: node
+bundle: actualite
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_libelle: true
+  field_media_image: true
+  field_title: true
+  langcode: true

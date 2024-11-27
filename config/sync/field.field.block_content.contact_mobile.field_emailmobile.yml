@@ -1,0 +1,19 @@
+uuid: de3ba582-6146-4d29-9fca-68908c3fba5f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_mobile
+    - field.storage.block_content.field_emailmobile
+id: block_content.contact_mobile.field_emailmobile
+field_name: field_emailmobile
+entity_type: block_content
+bundle: contact_mobile
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

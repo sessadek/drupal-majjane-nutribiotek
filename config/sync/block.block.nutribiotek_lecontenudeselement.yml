@@ -1,0 +1,35 @@
+uuid: d053146a-4fe6-46d9-93b6-0aca70d99516
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_mobile:8e3dca10-8c83-40fb-8444-52ac9a3ca979'
+  module:
+    - block_content
+    - language
+  theme:
+    - nutribiotek
+id: nutribiotek_lecontenudeselement
+theme: nutribiotek
+region: mobile_nav_contact
+weight: -15
+provider: null
+plugin: 'block_content:8e3dca10-8c83-40fb-8444-52ac9a3ca979'
+settings:
+  id: 'block_content:8e3dca10-8c83-40fb-8444-52ac9a3ca979'
+  label: 'le contenu des element'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      fr: fr
+      ar: ar

@@ -1,0 +1,14 @@
+uuid: f6af66be-43b8-4f73-a527-ab09ee6ae5ef
+langcode: en
+status: true
+dependencies: {  }
+name: social_media_image_24x24
+label: 'Social Media Image (24x24)'
+effects:
+  32e51eb0-6749-4b7d-92db-daab74b90deb:
+    uuid: 32e51eb0-6749-4b7d-92db-daab74b90deb
+    id: image_resize
+    weight: 1
+    data:
+      width: 24
+      height: 24

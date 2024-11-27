@@ -1,0 +1,13 @@
+uuid: 10b6db08-b387-42b7-aed3-9350061818b0
+langcode: en
+status: true
+dependencies: {  }
+id: social_media_image
+label: 'Social Media Image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_2
+field_map: {  }

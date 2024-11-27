@@ -1,0 +1,19 @@
+uuid: 3a3ced88-3c7d-4837-94d0-090aaabc6421
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.nos_partenaires_block_top
+id: paragraph.nos_partenaires_block_top.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: nos_partenaires_block_top
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

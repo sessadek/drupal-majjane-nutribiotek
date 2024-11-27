@@ -1,0 +1,22 @@
+uuid: 7f49d8be-bf2b-43aa-ac30-b3ff3591addb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.notre_offre
+id: paragraph.notre_offre.status
+field_name: status
+entity_type: paragraph
+bundle: notre_offre
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

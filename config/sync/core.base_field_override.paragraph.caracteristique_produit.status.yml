@@ -1,0 +1,22 @@
+uuid: 4bccd059-7d6b-4669-afe9-187d8eb94a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.caracteristique_produit
+id: paragraph.caracteristique_produit.status
+field_name: status
+entity_type: paragraph
+bundle: caracteristique_produit
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

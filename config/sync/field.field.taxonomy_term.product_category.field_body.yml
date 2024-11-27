@@ -1,0 +1,24 @@
+uuid: 0a3833af-3d8a-4173-8924-991ab27d2398
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_body
+    - filter.format.full_html
+    - taxonomy.vocabulary.product_category
+  module:
+    - text
+id: taxonomy_term.product_category.field_body
+field_name: field_body
+entity_type: taxonomy_term
+bundle: product_category
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

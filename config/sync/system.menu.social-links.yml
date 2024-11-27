@@ -1,0 +1,8 @@
+uuid: 441a1348-5bde-4d38-b5f2-80f55d4d3269
+langcode: en
+status: true
+dependencies: {  }
+id: social-links
+label: 'Social Links'
+description: "Social Links provides quick access to a brand's social media profiles for easy connection and engagement."
+locked: false

@@ -1,0 +1,10 @@
+uuid: 2a0167a2-9c79-4f8b-a3da-5de5d369d111
+langcode: en
+status: true
+dependencies: {  }
+id: a_propos_mot_directeur
+label: 'Mot Directeur'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
